@@ -125,6 +125,26 @@ mithilfe einer passenden Halterung direkt vor die Lichtquelle gestellt.
 
 Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte verwendet.
 
+\begin{table}[H]
+	\caption{Verwendete Geräte}
+	\begin{tabular}{|l|l|l|l|l|}
+	\hline
+	\textbf{Gerätetyp} & \textbf{Hersteller} & \textbf{Typ}     & \textbf{Inventar-Nr} & \textbf{Anmerkung} \\ \hline
+	Prismaspektogaph   & Steinheil           &                  & 0153624              &                    \\ \hline
+	Gitterspektograph  & Ocean Optics        & USB4000          & 0101417              & 350-1000 nm        \\ \hline
+	Kamera             & Canon               & EOS 600D         & 0206884              & ohne Linse         \\ \hline
+	Lichtleiter        & Ocean Optics        & OP1000-2-UV-BX   &                      &                    \\ \hline
+	Hg-Dampflampe      &                     & Hg-Cd            & F21                  &                    \\ \hline
+	Halogenlampe       & Leybold             &                  & F4                   &                    \\ \hline
+	Iodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ \hline
+	Sammellinsen       &                     & f = 250, 50, 120 &   & 3 x                \\ \hline
+	Optische Bank      &                     &                  &                      & höhenverstellbar   \\ \hline
+	Linsenhalter       &                     &                  &                      &                    \\ \hline
+	\end{tabular}
+	\label{tab:gerate}
+	\end{table}
+
+%V/1003, Qu, V/748/4
 
 \section{Durchführung und Messergebnisse}\label{sec:durchfuhrung}
 
@@ -137,7 +157,8 @@ betrachtet. Es ist dafür zu sorgen, dass die einzelnen Linien der Lichtquelle s
 eine möglichst gute Nutzung der gesamten Breite des zur Verfügung stehenden Schirms vorliegt. Dies wird durch
 Verstellen und anschließender Feinjustierung der Neigung und des Abstands der Kamera zum Spektographen 
 erreicht. Um das abgebildete Spektrum sichtbar zu machen, wird ein Streifen Klebeband an der entsprechenden Stelle
-des Spektrographen angebracht.
+des Spektrographen angebracht. Um dafür zu sorgen, dass kein Störlicht auf die Kamera gelangt, wird das gesamte
+Raumlicht abgedunkelt und ein Karton seitlich an die Kamera gehalten, um kein Licht seitlich von der Lichtquelle zu bekommen.
 
 Weil nicht das gesamte Spektrum mit einem Foto aufgezeichnet werden kann wird zunächst bestimmt, wie groß der 
 erfasste Bereich ist. Dazu wird zunächst die Kamera mithilfe der entsprechenden Kurbel so lange bewegt, bis der
@@ -153,9 +174,37 @@ Ein Bild eines Teils des Spektrums in entsprechenden Computerprogramm ist symbol
 %todo foto vom comp programm \label{fig:comp}
 
 Um den Versuch repoduzieren zu können, sollte exakt der gleiche Spektrograph verwendet werden. Alle abgelesenen und 
-eingestellten Werte sind in folgender \autoref{tab:einstellungen} ersichtlich.
+eingestellten Werte sind in folgender \autoref{tab:einstellungen} ersichtlich. Weil die Messwerte nicht immer klar
+von der entsprechenden Skala ablesbar waren wurde dies bei den Unsicherheiten berücksichtigt und in der Tabelle in der
+entsprechenden Spalte vermerkt.
 
-%tabelle
+
+\begin{table}[H]
+	\caption[Abgelesene Einstellungen]{Abgelesene Einstellungen\\
+	$f_i \dots$ Brennweite der i-ten Sammellinse in mm\\
+	$f_k \dots$ Brennweite des Kollimators\\
+	$SP \dots$ Spaltbreite des Eingangsspalt\\
+	$x \dots$ Entfernung der Kamera\\
+	$N_{Pi} \dots$ Neigung des i-ten Prismas (nicht in °)\\
+	$N_{PT} \dots$ Neigung des Tisches in °\\
+	$N_{PK} \dots$ Neigung der Kamera in ° }
+	\begin{tabular}{|l|l|l|}
+	\hline
+	\textbf{Bezeichnung} & \textbf{Messwert}        & \textbf{Anmerkung zur Unsicherheit} \\ \hline
+	$f_1$                & \SI{250}{\mm}            & Implizit gegeben                    \\ \hline
+	$f_2$                & \SI{50}{\mm}             & Implizit gegeben                    \\ \hline
+	$f_3$                & \SI{120}{\mm}            & Implizit gegeben                    \\ \hline
+	$f_k$                & \SI{141.6(1)}{\micro\m}  & Skala                               \\ \hline
+	$SP$                 & \SI{80(1)}{\micro\m}     & Mikrometerschraube                  \\ \hline
+	$x$                  & \SI{43.2(1)}{\mm}        & Skala                               \\ \hline
+	$N_{P1}$             & \SI{65(2)}{}             & Geschätzt mit Entfernungsmessung    \\ \hline
+	$N_{P2}$             & \SI{10.5(5)}{}           & Abgelesen auf entsprechender Skala  \\ \hline
+	$N_{P3}$             & \SI{6.5(2)}{}            & Abgelesen auf entsprechender Skala  \\ \hline
+	$N_{PT}$             & \SI{10.88(2)}{\degree}   & Skala                               \\ \hline
+	$N_{PK}$             & \SI{20(5)}{\degree}      & Augenmaß                            \\ \hline
+	\end{tabular}
+	\label{tab:einstellungen}
+	\end{table}
 
 \subsection{Gitterspektograph}
 
@@ -197,6 +246,10 @@ in \autoref{fig:comp_gitter} sichtbar.
 
 \subsection{Disotiationsenergie des Jodmoleküls}
 
+
+
+
+%letzte Kalibrierung von Gitterspekogaphen 2008
 
 \section{Zusammenfassung}\label{sec:zs}
 
