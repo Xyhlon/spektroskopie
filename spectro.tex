@@ -30,7 +30,7 @@
 \section{Grundlagen}\label{sec:Grund}
 
 
-Molekulare Spektroskopie
+\subsection{Molekulare Spektroskopie}
 
 Wenn elektromagnetische Strahlung mit einem Molekül in Wechselwirkung tritt, kann sie absorbiert, emittiert oder 
 gestreut werden, je nach der Energie der Strahlung und den Energieniveaus des Moleküls. Die Energie der Strahlung 
@@ -39,8 +39,8 @@ Struktur, seine Vibrations- und Rotationsmoden bestimmt.
 
 Die Absorption oder Emission elektromagnetischer Strahlung durch ein Molekül kann als Änderung der Intensität der 
 Strahlung beim Durchgang durch die Probe beobachtet werden. Diese Änderung kann mit einem Spektrometer gemessen und
- zur Untersuchung der elektronischen Struktur und Bindung des Moleküls sowie seiner Schwingungs- und Rotationsenergieniveaus
-  verwendet werden.
+zur Untersuchung der elektronischen Struktur und Bindung des Moleküls sowie seiner Schwingungs- und Rotationsenergieniveaus
+verwendet werden.
 
 \subsection{Prismenspektrograph}
 Ein Prismenspektrograph ist ein Spektrograph, der ein Prisma verwendet, um die elektromagnetische Strahlung in ihre 
@@ -62,14 +62,33 @@ nach dem Snelliuschen Brechungsgesetz, \autoref{eq:snel}, ausbreiten und ein Spe
 	\label{eq:snel}
 \end{equation}
 
-%erkl,skizze
+$\theta_1$ und $\theta_2$ bezeichnet dabei den Eintritts bzw. Austrittswinkel und $n_1$ und $n_2$ die entsprechenden Brechzahlen.
+Der Strahlengang durch ein Prisma ist in folgender \autoref{fig:skizze} skizziert.
+
+%todo cite
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =\textwidth]{./figures/skizze.png}
+	\end{center}
+	\caption[Skizzierter Strahlengang durch ein Prisma]
+	{Skizzierter Strahlengang durch ein Prisma, entnommen aus \cite{unterlagen} \\
+	S \(\dots\) Spalt \\
+	C \(\dots\) Kondensor-Linse \\
+	Pr \(\dots\) Prisma \\
+	F \(\dots\) Fokusier-Linse \\
+	CCD \(\dots\) Schirm \\
+	$\delta$ \(\dots\) Brechungswinkel
+	}\label{fig:skizze}
+\end{figure}
 
 Der Detektor eines Prismenspektrographen ist in der Regel eine Kamera oder ein Aufzeichnungsgerät, mit dem die Intensität 
 der elektromagnetischen Strahlung über einen Bereich von Wellenlängen oder Frequenzen gemessen wird. Der Detektor erzeugt 
 ein Diagramm der Intensität der Strahlung in Abhängigkeit von der Wellenlänge oder Frequenz, das als Spektrum bezeichnet 
 wird.
 
-Gitterspektrograf
+\subsection{Gitterspektrograf}
+
 Ein Echelle-Spektrograf ist ein Spektrograf, der ein Beugungsgitter, das so genannte Echelle-Gitter, verwendet, um die 
 elektromagnetische Strahlung in ihre einzelnen Wellenlängen oder Frequenzen zu zerlegen. Er besteht aus einer Lichtquelle, 
 einem Echelle-Gitter, einem Kollimator, einer Kamera oder einem Aufzeichnungsgerät und einer Brennebene.
@@ -81,10 +100,29 @@ der Probe absorbiert, emittiert oder gestreut.
 Das Echelle-Gitter ist ein Beugungsgitter, das aus einem transparenten optischen Element wie Glas oder Quarz besteht und 
 mit einem periodischen Muster aus parallelen Linien versehen ist. Es wird im Strahlengang der elektromagnetischen Strahlung 
 angebracht und dient dazu, die Strahlung in ihre einzelnen Wellenlängen oder Frequenzen zu zerlegen. Das Echelle-Gitter 
-funktioniert, indem es die Strahlung je nach ihrer Wellenlänge oder Frequenz in unterschiedlichen Winkeln beugt. Dies führt 
-dazu, dass sich die verschiedenen Wellenlängen oder Frequenzen der Strahlung ausbreiten und ein Spektrum bilden.
+funktioniert, indem es die Strahlung je nach ihrer Wellenlänge oder Frequenz in unterschiedlichen Winkeln, nach \autoref{eq:beugung},
+beugt. Dies führt dazu, dass sich die verschiedenen Wellenlängen oder Frequenzen der Strahlung ausbreiten und ein Spektrum 
+bilden.
 
-Der Kollimator ist eine Linse oder ein Spiegel, der dazu dient, die elektromagnetische Strahlung zu kollimieren, d. h. zu 
+\begin{equation}
+	d \sin{\theta} = n \lambda
+	\label{eq:brechung}
+\end{equation}
+
+$d$ bezeichnet dabei den Gitterabstand, $\theta$ den Beugungswinkel, $n$ die entsprechende Ordnung und $\lambda$ die Wellenlänge.
+Eine schematische Skizze des Strahlengangs ist in \autoref{fig:gitter} sichtbar.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =\textwidth]{./figures/skizze_gitter.png}
+	\end{center}
+	\caption[Skizzierter Strahlengang durch ein Gitter]
+	{Skizzierter Strahlengang durch ein Gitter, entnommen aus \cite{unterlagen}
+	}\label{fig:gitter}
+\end{figure}
+
+
+Der Kollimator ist eine Linse oder ein Spiegel, der dazu dient, die elektromagnetische Strahlung zu kollimieren, d.h. zu 
 einem parallelen Strahl zu bündeln. Der Kollimator befindet sich hinter dem Echelle-Gitter und sorgt dafür, dass die 
 Strahlung auf die Kamera oder den Rekorder fokussiert wird.
 
@@ -97,7 +135,7 @@ Kollimators. Die Kamera oder der Rekorder wird in der Fokusebene platziert, um d
 Strahlung zu messen.
 
 
-
+%todo max brachst du noch irgendwelche formeln?
 
 \section{Versuchsaufbau} \label{sec:aufbau}
 
