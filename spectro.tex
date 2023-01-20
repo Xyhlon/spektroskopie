@@ -11,14 +11,13 @@
 	Spektrograph}
 % Fußzeile
 
-
 \begin{document}
 
 \section{Aufgabenstellung\label{sec:Aufgabenstellung}}
 
 \begin{itemize}
-	\item Adjustierung des Prismenspektrographen, der Linsen und der Prismen im Spektrographen, um ein Spektrum für alle 
-	Lichtquellen abzubilden.
+	\item Adjustierung des Prismenspektrographen, der Linsen und der Prismen im
+	      Spektrographen, um ein Spektrum für alle Lichtquellen abzubilden.
 	\item Aufnahme des Spektrums von den Verschiedenen Lichtquellen und der Probe.
 	\item Aufnahme der Spektren der gleichen Lichtquellen mit dem Gitterspektrographen.
 	\item Erzeugung der Dispersionskurve des Prismenspektrographen.
@@ -29,33 +28,41 @@
 
 \section{Grundlagen}\label{sec:Grund}
 
-
 \subsection{Molekulare Spektroskopie}
 
-Wenn elektromagnetische Strahlung mit einem Molekül in Wechselwirkung tritt, kann sie absorbiert, emittiert oder 
-gestreut werden, je nach der Energie der Strahlung und den Energieniveaus des Moleküls. Die Energie der Strahlung 
-wird durch ihre Wellenlänge oder Frequenz bestimmt, und die Energieniveaus des Moleküls werden durch seine elektronische 
-Struktur, seine Vibrations- und Rotationsmoden bestimmt.
+Wenn elektromagnetische Strahlung mit einem Molekül in Wechselwirkung tritt,
+kann sie absorbiert, emittiert oder gestreut werden, je nach der Energie der
+Strahlung und den Energieniveaus des Moleküls. Die Energie der Strahlung wird
+durch ihre Wellenlänge oder Frequenz bestimmt, und die Energieniveaus des
+Moleküls werden durch seine elektronische Struktur, seine Vibrations- und
+Rotationsmoden bestimmt.
 
-Die Absorption oder Emission elektromagnetischer Strahlung durch ein Molekül kann als Änderung der Intensität der 
-Strahlung beim Durchgang durch die Probe beobachtet werden. Diese Änderung kann mit einem Spektrometer gemessen und
-zur Untersuchung der elektronischen Struktur und Bindung des Moleküls sowie seiner Schwingungs- und Rotationsenergieniveaus
-verwendet werden.
+Die Absorption oder Emission elektromagnetischer Strahlung durch ein Molekül
+kann als Änderung der Intensität der Strahlung beim Durchgang durch die Probe
+beobachtet werden. Diese Änderung kann mit einem Spektrometer gemessen und zur
+Untersuchung der elektronischen Struktur und Bindung des Moleküls sowie seiner
+Schwingungs- und Rotationsenergieniveaus verwendet werden.
 
 \subsection{Prismenspektrograph}
-Ein Prismenspektrograph ist ein Spektrograph, der ein Prisma verwendet, um die elektromagnetische Strahlung in ihre 
-einzelnen Wellenlängen oder Frequenzen zu zerlegen. Er besteht aus einer Lichtquelle, einem Prisma und einem Detektor 
-und wird verwendet, um das elektromagnetische Spektrum einer Probe grafisch darzustellen.
+Ein Prismenspektrograph ist ein Spektrograph, der ein Prisma verwendet, um die
+elektromagnetische Strahlung in ihre einzelnen Wellenlängen oder Frequenzen zu
+zerlegen. Er besteht aus einer Lichtquelle, einem Prisma und einem Detektor und
+wird verwendet, um das elektromagnetische Spektrum einer Probe grafisch
+darzustellen.
 
-Die Lichtquelle eines Prismenspektrographen ist in der Regel eine Lampe oder ein Laser, mit dem die Probe beleuchtet 
-wird. Die Probe wird in den Strahlengang gestellt, und ein Teil der elektromagnetischen Strahlung wird von der Probe 
-absorbiert, emittiert oder gestreut.
+Die Lichtquelle eines Prismenspektrographen ist in der Regel eine Lampe oder
+ein Laser, mit dem die Probe beleuchtet wird. Die Probe wird in den
+Strahlengang gestellt, und ein Teil der elektromagnetischen Strahlung wird von
+der Probe absorbiert, emittiert oder gestreut.
 
-Das Prisma ist ein transparentes optisches Element, das aus einem brechenden Material wie Glas oder Quarz besteht. Es 
-wird in den Weg der elektromagnetischen Strahlung gestellt und dient dazu, die Strahlung in ihre einzelnen Wellenlängen
-oder Frequenzen zu zerlegen. Das Prisma funktioniert, indem es die Strahlung je nach Wellenlänge oder Frequenz in 
-unterschiedlichen Winkeln bricht. Dies führt dazu, dass sich die verschiedenen Wellenlängen oder Frequenzen der Strahlung 
-nach dem Snelliuschen Brechungsgesetz, \autoref{eq:snel}, ausbreiten und ein Spektrum bilden. 
+Das Prisma ist ein transparentes optisches Element, das aus einem brechenden
+Material wie Glas oder Quarz besteht. Es wird in den Weg der
+elektromagnetischen Strahlung gestellt und dient dazu, die Strahlung in ihre
+einzelnen Wellenlängen oder Frequenzen zu zerlegen. Das Prisma funktioniert,
+indem es die Strahlung je nach Wellenlänge oder Frequenz in unterschiedlichen
+Winkeln bricht. Dies führt dazu, dass sich die verschiedenen Wellenlängen oder
+Frequenzen der Strahlung nach dem Snelliuschen Brechungsgesetz,
+\autoref{eq:snel}, ausbreiten und ein Spektrum bilden. 
 
 \begin{equation}
 	\frac{\sin{\theta_1}}{\sin{\theta_2}} = \frac{n_1(\lambda)}{n_2(\lambda)}
@@ -71,38 +78,45 @@ Der Strahlengang durch ein Prisma ist in folgender \autoref{fig:skizze} skizzier
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/skizze.png}
 	\end{center}
-	\caption[Skizzierter Strahlengang durch ein Prisma]
-	{Skizzierter Strahlengang durch ein Prisma, entnommen aus \cite{unterlagen} \\
-	S \(\dots\) Spalt \\
-	C \(\dots\) Kondensor-Linse \\
-	Pr \(\dots\) Prisma \\
-	F \(\dots\) Fokusier-Linse \\
-	CCD \(\dots\) Schirm \\
-	$\delta$ \(\dots\) Brechungswinkel
+	\caption[Skizzierter Strahlengang durch ein Prisma] {Skizzierter Strahlengang durch ein
+		Prisma, entnommen aus \cite{unterlagen} \\
+		S \(\dots\) Spalt                       \\
+		C \(\dots\) Kondensor-Linse             \\
+		Pr \(\dots\) Prisma                     \\
+		F \(\dots\) Fokusier-Linse              \\
+		CCD \(\dots\) Schirm                    \\
+		$\delta$ \(\dots\) Brechungswinkel
 	}\label{fig:skizze}
 \end{figure}
 
-Der Detektor eines Prismenspektrographen ist in der Regel eine Kamera oder ein Aufzeichnungsgerät, mit dem die Intensität 
-der elektromagnetischen Strahlung über einen Bereich von Wellenlängen oder Frequenzen gemessen wird. Der Detektor erzeugt 
-ein Diagramm der Intensität der Strahlung in Abhängigkeit von der Wellenlänge oder Frequenz, das als Spektrum bezeichnet 
-wird.
+Der Detektor eines Prismenspektrographen ist in der Regel eine Kamera oder ein
+Aufzeichnungsgerät, mit dem die Intensität der elektromagnetischen Strahlung
+über einen Bereich von Wellenlängen oder Frequenzen gemessen wird. Der Detektor
+erzeugt ein Diagramm der Intensität der Strahlung in Abhängigkeit von der
+Wellenlänge oder Frequenz, das als Spektrum bezeichnet wird.
 
 \subsection{Gitterspektrograf}
 
-Ein Echelle-Spektrograf ist ein Spektrograf, der ein Beugungsgitter, das so genannte Echelle-Gitter, verwendet, um die 
-elektromagnetische Strahlung in ihre einzelnen Wellenlängen oder Frequenzen zu zerlegen. Er besteht aus einer Lichtquelle, 
-einem Echelle-Gitter, einem Kollimator, einer Kamera oder einem Aufzeichnungsgerät und einer Brennebene.
+Ein Echelle-Spektrograf ist ein Spektrograf, der ein Beugungsgitter, das so
+genannte Echelle-Gitter, verwendet, um die elektromagnetische Strahlung in ihre
+einzelnen Wellenlängen oder Frequenzen zu zerlegen. Er besteht aus einer
+Lichtquelle, einem Echelle-Gitter, einem Kollimator, einer Kamera oder einem
+Aufzeichnungsgerät und einer Brennebene.
 
-Bei der Lichtquelle eines Echelle-Spektrographen handelt es sich in der Regel um eine Lampe oder einen Laser, mit dem die 
-Probe beleuchtet wird. Die Probe wird in den Strahlengang gestellt, und ein Teil der elektromagnetischen Strahlung wird von 
-der Probe absorbiert, emittiert oder gestreut.
+Bei der Lichtquelle eines Echelle-Spektrographen handelt es sich in der Regel
+um eine Lampe oder einen Laser, mit dem die Probe beleuchtet wird. Die Probe
+wird in den Strahlengang gestellt, und ein Teil der elektromagnetischen
+Strahlung wird von der Probe absorbiert, emittiert oder gestreut.
 
-Das Echelle-Gitter ist ein Beugungsgitter, das aus einem transparenten optischen Element wie Glas oder Quarz besteht und 
-mit einem periodischen Muster aus parallelen Linien versehen ist. Es wird im Strahlengang der elektromagnetischen Strahlung 
-angebracht und dient dazu, die Strahlung in ihre einzelnen Wellenlängen oder Frequenzen zu zerlegen. Das Echelle-Gitter 
-funktioniert, indem es die Strahlung je nach ihrer Wellenlänge oder Frequenz in unterschiedlichen Winkeln, nach \autoref{eq:beugung},
-beugt. Dies führt dazu, dass sich die verschiedenen Wellenlängen oder Frequenzen der Strahlung ausbreiten und ein Spektrum 
-bilden.
+Das Echelle-Gitter ist ein Beugungsgitter, das aus einem transparenten
+optischen Element wie Glas oder Quarz besteht und mit einem periodischen Muster
+aus parallelen Linien versehen ist. Es wird im Strahlengang der
+elektromagnetischen Strahlung angebracht und dient dazu, die Strahlung in ihre
+einzelnen Wellenlängen oder Frequenzen zu zerlegen. Das Echelle-Gitter
+funktioniert, indem es die Strahlung je nach ihrer Wellenlänge oder Frequenz in
+unterschiedlichen Winkeln, nach \autoref{eq:beugung}, beugt. Dies führt dazu,
+dass sich die verschiedenen Wellenlängen oder Frequenzen der Strahlung
+ausbreiten und ein Spektrum bilden.
 
 \begin{equation}
 	d \sin{\theta} = n \lambda
@@ -116,24 +130,25 @@ Eine schematische Skizze des Strahlengangs ist in \autoref{fig:gitter} sichtbar.
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/skizze_gitter.png}
 	\end{center}
-	\caption[Skizzierter Strahlengang durch ein Gitter]
-	{Skizzierter Strahlengang durch ein Gitter, entnommen aus \cite{unterlagen}
+	\caption[Skizzierter Strahlengang durch ein Gitter] {Skizzierter Strahlengang durch ein
+		Gitter, entnommen aus \cite{unterlagen}
 	}\label{fig:gitter}
 \end{figure}
 
+Der Kollimator ist eine Linse oder ein Spiegel, der dazu dient, die
+elektromagnetische Strahlung zu kollimieren, d.h. zu einem parallelen Strahl zu
+bündeln. Der Kollimator befindet sich hinter dem Echelle-Gitter und sorgt
+dafür, dass die Strahlung auf die Kamera oder den Rekorder fokussiert wird.
 
-Der Kollimator ist eine Linse oder ein Spiegel, der dazu dient, die elektromagnetische Strahlung zu kollimieren, d.h. zu 
-einem parallelen Strahl zu bündeln. Der Kollimator befindet sich hinter dem Echelle-Gitter und sorgt dafür, dass die 
-Strahlung auf die Kamera oder den Rekorder fokussiert wird.
+Mit der Kamera oder dem Rekorder wird die Intensität der elektromagnetischen
+Strahlung über einen Bereich von Wellenlängen oder Frequenzen gemessen. Es wird
+ein Diagramm der Strahlungsintensität in Abhängigkeit von der Wellenlänge oder
+Frequenz erstellt, das als Spektrum bezeichnet wird.
 
-Mit der Kamera oder dem Rekorder wird die Intensität der elektromagnetischen Strahlung über einen Bereich von Wellenlängen 
-oder Frequenzen gemessen. Es wird ein Diagramm der Strahlungsintensität in Abhängigkeit von der Wellenlänge oder Frequenz 
-erstellt, das als Spektrum bezeichnet wird.
-
-Die Brennebene ist die Ebene, in der das Spektrum gebildet wird, und sie befindet sich in der Regel im Brennpunkt des 
-Kollimators. Die Kamera oder der Rekorder wird in der Fokusebene platziert, um die Intensität der elektromagnetischen 
-Strahlung zu messen.
-
+Die Brennebene ist die Ebene, in der das Spektrum gebildet wird, und sie
+befindet sich in der Regel im Brennpunkt des Kollimators. Die Kamera oder der
+Rekorder wird in der Fokusebene platziert, um die Intensität der
+elektromagnetischen Strahlung zu messen.
 
 %todo max brachst du noch irgendwelche formeln?
 
@@ -141,84 +156,92 @@ Strahlung zu messen.
 
 \subsection{Prismenspekrograph}
 
-Der Versuchsaufbau ist in folgender \autoref{fig:aufbau_Spektograph} ersichtlich. Dabei wird die Position der Lichtquelle
-mit einem leeren Linsenhalter auf der optischen Bank markiert, um später beim Wechsel der Lichtquelle die selbe Position zu
-ermöglichen. Bei den Linsen wir dabei versucht, den vorliegenden Lichtstrahl, so gut wie möglich, auf den Eingangsspalt des
-Spektrographen zu fokusieren, um eine möglichst hohe Intensität zu gewährleisten. Auch die Position, auf die die Iodzelle
-gestellt wird, wird mit einem leeren Linsenhalter markiert.
+Der Versuchsaufbau ist in folgender \autoref{fig:aufbau_Spektograph}
+ersichtlich. Dabei wird die Position der Lichtquelle mit einem leeren
+Linsenhalter auf der optischen Bank markiert, um später beim Wechsel der
+Lichtquelle die selbe Position zu ermöglichen. Bei den Linsen wir dabei
+versucht, den vorliegenden Lichtstrahl, so gut wie möglich, auf den
+Eingangsspalt des Spektrographen zu fokusieren, um eine möglichst hohe
+Intensität zu gewährleisten. Auch die Position, auf die die Iodzelle gestellt
+wird, wird mit einem leeren Linsenhalter markiert.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/Spektograph.png}
 	\end{center}
-	\caption[Versuchsaufbau des Prismenspektrographen]
-	{Versuchsaufbau des Prismenspektrographen \\
-	1 \(\dots\) Lichtquelle \\
-	2 \(\dots\) Markierung für die Lichtquelle \\
-	3 \(\dots\) Verwendete Sammellinsen (Brennweiten: v.l.n.r. 250, 50, 120) \\
-	4 \(\dots\) Markierung für die Iodquelle \\
-	5 \(\dots\) Eintrittsspalt in den Spektrographen \\
-	6 \(\dots\) Prismen in Spektrographen \\
-	7 \(\dots\) Halterung für Kamera \\
-	8 \(\dots\) Befestigte Kamera
+	\caption[Versuchsaufbau des Prismenspektrographen] {Versuchsaufbau des
+		Prismenspektrographen                                                    \\
+		1 \(\dots\) Lichtquelle                                                  \\
+		2 \(\dots\) Markierung für die Lichtquelle                               \\
+		3 \(\dots\) Verwendete Sammellinsen (Brennweiten: v.l.n.r. 250, 50, 120) \\
+		4 \(\dots\) Markierung für die Iodquelle                                 \\
+		5 \(\dots\) Eintrittsspalt in den Spektrographen                         \\
+		6 \(\dots\) Prismen in Spektrographen                                    \\
+		7 \(\dots\) Halterung für Kamera                                         \\
+		8 \(\dots\) Befestigte Kamera
 	}\label{fig:aufbau_Spektograph}
 \end{figure}
 
-Im inneren des Spektrographen müssen nun die Prismen durch vorsichtiges Verdrehen richtig eingestellt werden, sodass der 
-eintreffende Lichtstraht durch die 3 Prismen zur Ausgangsöffnung abgelenkt wird und dort das komplette Spektrum, innerhalb
-des Schirms sichtbar ist. Um dies gut beurteilen zu können, wird ein Streifen Klebeband über die entsprehende Öffnung geklebt,
-sodass das gebrochene Licht gut sichtbar wird. Die entsprechenden Positionen der Prismen sind in \autoref{fig:prismen} sichtbar.
+Im inneren des Spektrographen müssen nun die Prismen durch vorsichtiges
+Verdrehen richtig eingestellt werden, sodass der eintreffende Lichtstraht durch
+die 3 Prismen zur Ausgangsöffnung abgelenkt wird und dort das komplette
+Spektrum, innerhalb des Schirms sichtbar ist. Um dies gut beurteilen zu können,
+wird ein Streifen Klebeband über die entsprehende Öffnung geklebt, sodass das
+gebrochene Licht gut sichtbar wird. Die entsprechenden Positionen der Prismen
+sind in \autoref{fig:prismen} sichtbar.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.5\textwidth]{./figures/Prismen.png}
 	\end{center}
-	\caption[Anordnung der Prismen im Spektrographen]
-	{Anordnung der Prismen im Spektrographen
+	\caption[Anordnung der Prismen im Spektrographen] {Anordnung der Prismen im
+		Spektrographen
 	}\label{fig:prismen}
 \end{figure}
 
 \subsection{Gitterspektograph}
 
-Der Aufbau des Gitterspektrographen ist in \autoref{fig:aufbau_gitter} sichtbar. Dabei wird der Sensor des Gitterspektrographen
-mithilfe einer passenden Halterung direkt vor die Lichtquelle gestellt.
+Der Aufbau des Gitterspektrographen ist in \autoref{fig:aufbau_gitter}
+sichtbar. Dabei wird der Sensor des Gitterspektrographen mithilfe einer
+passenden Halterung direkt vor die Lichtquelle gestellt.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/Gitterspektograph.png}
 	\end{center}
-	\caption[Versuchsaufbau des Gitterspektrographen]
-	{Versuchsaufbau des Gitterspektrographen \\
-	1 \(\dots\) Lichtquelle \\
-	2 \(\dots\) Gitterspektograph \\
-	3 \(\dots\) Sensor der Spektrographen \\
-	4 \(\dots\) Schnittstelle für Computer
+	\caption[Versuchsaufbau des Gitterspektrographen] {Versuchsaufbau des
+		Gitterspektrographen                  \\
+		1 \(\dots\) Lichtquelle               \\
+		2 \(\dots\) Gitterspektograph         \\
+		3 \(\dots\) Sensor der Spektrographen \\
+		4 \(\dots\) Schnittstelle für Computer
 	}\label{fig:aufbau_gitter}
 \end{figure}
-
 
 \section{Geräteliste}
 \label{sec:geraeteliste}
 
-Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte verwendet.
+Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte
+verwendet.
 
 \begin{table}[H]
-	\caption{Verwendete Geräte}
+	\caption{Verwendete Geräte
+	}
 	\begin{tabular}{|l|l|l|l|l|}
-	\hline
-	\textbf{Gerätetyp} & \textbf{Hersteller} & \textbf{Typ}     & \textbf{Inventar-Nr} & \textbf{Anmerkung} \\ \hline
-	Prismaspektogaph   & Steinheil           &                  & 0153624              &                    \\ \hline
-	Gitterspektograph  & Ocean Optics        & USB4000          & 0101417              & 350-1000 nm        \\ \hline
-	Kamera             & Canon               & EOS 600D         & 0206884              & ohne Linse         \\ \hline
-	Lichtleiter        & Ocean Optics        & OP1000-2-UV-BX   &                      &                    \\ \hline
-	Hg-Dampflampe      &                     & Hg-Cd            & F21                  &                    \\ \hline
-	Halogenlampe       & Leybold             &                  & F4                   &                    \\ \hline
-	Iodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ \hline
-	Sammellinsen       &                     & f = 250, 50, 120 &   & 3 x                \\ \hline
-	Optische Bank      &                     &                  &                      & höhenverstellbar   \\ \hline
-	Linsenhalter       &                     &                  &                      &                    \\ \hline
+		\hline
+		\textbf{Gerätetyp} & \textbf{Hersteller} & \textbf{Typ}     & \textbf{Inventar-Nr} & \textbf{Anmerkung} \\ \hline
+		Prismaspektogaph   & Steinheil           &                  & 0153624              &                    \\ \hline
+		Gitterspektograph  & Ocean Optics        & USB4000          & 0101417              & 350-1000 nm        \\ \hline
+		Kamera             & Canon               & EOS 600D         & 0206884              & ohne Linse         \\ \hline
+		Lichtleiter        & Ocean Optics        & OP1000-2-UV-BX   &                      &                    \\ \hline
+		Hg-Dampflampe      &                     & Hg-Cd            & F21                  &                    \\ \hline
+		Halogenlampe       & Leybold             &                  & F4                   &                    \\ \hline
+		Iodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ \hline
+		Sammellinsen       &                     & f = 250, 50, 120 &                      & 3 x                \\ \hline
+		Optische Bank      &                     &                  &                      & höhenverstellbar   \\ \hline
+		Linsenhalter       &                     &                  &                      &                    \\ \hline
 	\end{tabular}
 	\label{tab:gerate}
-	\end{table}
+\end{table}
 
 %V/1003, Qu, V/748/4
 
@@ -226,156 +249,169 @@ Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte verwen
 
 \subsection{Prismenspekrograph}
 
-Nachdem die Linsen und Prismen wie bereits in \autoref{sec:aufbau} angeführt, aufgebaut wurden,
-wird das, von der Kamera erfasste, Spektrum am Computer mit der Software
+Nachdem die Linsen und Prismen wie bereits in \autoref{sec:aufbau} angeführt,
+aufgebaut wurden, wird das, von der Kamera erfasste, Spektrum am Computer mit
+der Software
 %todo softwarename
-betrachtet. Es ist dafür zu sorgen, dass die einzelnen Linien der Lichtquelle scharf erscheinen und
-eine möglichst gute Nutzung der gesamten Breite des zur Verfügung stehenden Schirms vorliegt. Dies wird durch
-Verstellen und anschließender Feinjustierung der Neigung und des Abstands der Kamera zum Spektographen 
-erreicht. Um das abgebildete Spektrum sichtbar zu machen, wird ein Streifen Klebeband an der entsprechenden Stelle
-des Spektrographen angebracht. Um dafür zu sorgen, dass kein Störlicht auf die Kamera gelangt, wird das gesamte
-Raumlicht abgedunkelt und ein Karton seitlich an die Kamera gehalten, um kein Licht seitlich von der Lichtquelle zu bekommen.
+betrachtet. Es ist dafür zu sorgen, dass die einzelnen Linien der Lichtquelle
+scharf erscheinen und eine möglichst gute Nutzung der gesamten Breite des zur
+Verfügung stehenden Schirms vorliegt. Dies wird durch Verstellen und
+anschließender Feinjustierung der Neigung und des Abstands der Kamera zum
+Spektographen erreicht. Um das abgebildete Spektrum sichtbar zu machen, wird
+ein Streifen Klebeband an der entsprechenden Stelle des Spektrographen
+angebracht. Um dafür zu sorgen, dass kein Störlicht auf die Kamera gelangt,
+wird das gesamte Raumlicht abgedunkelt und ein Karton seitlich an die Kamera
+gehalten, um kein Licht seitlich von der Lichtquelle zu bekommen.
 
-Weil nicht das gesamte Spektrum mit einem Foto aufgezeichnet werden kann wird zunächst bestimmt, wie groß der 
-erfasste Bereich ist. Dazu wird zunächst die Kamera mithilfe der entsprechenden Kurbel so lange bewegt, bis der
-rote Peak gerade am rechten Rand des Bildschirms verschwindet. Nun wird die Kamera, unter Bestimmung der entsprechenden 
-Distanz, solange weiterbewegt, bis sich diese rote Linie am linken Rand des Bildschirms befindet. Dadurch wird die 
-Distanz des aufgezeichneten Spektrums bestimmt. Nun wird auf diese Art das gesamte Spektrum aufgezeichnet, welches
-schließlich Bild für Bild zusammengesetzt werden kann. Dabei ist zu beachten, dass das Spektrum immer von beiden 
-Lichtquellen und der Iodprobe festgehalten wird, bevor die Kameraposition verschoben wird. Weil bei den verschiedenen 
-Farbeindrücken unterschiedliche Helligkeiten vorliegen, muss auch immer der Kontrast neu eingestellt werden.
-Ein Bild eines Teils des Spektrums in entsprechenden Computerprogramm ist symbolisch in folgender \autoref{fig:comp} sichtbar.
-
+Weil nicht das gesamte Spektrum mit einem Foto aufgezeichnet werden kann wird
+zunächst bestimmt, wie groß der erfasste Bereich ist. Dazu wird zunächst die
+Kamera mithilfe der entsprechenden Kurbel so lange bewegt, bis der rote Peak
+gerade am rechten Rand des Bildschirms verschwindet. Nun wird die Kamera, unter
+Bestimmung der entsprechenden Distanz, solange weiterbewegt, bis sich diese
+rote Linie am linken Rand des Bildschirms befindet. Dadurch wird die Distanz
+des aufgezeichneten Spektrums bestimmt. Nun wird auf diese Art das gesamte
+Spektrum aufgezeichnet, welches schließlich Bild für Bild zusammengesetzt
+werden kann. Dabei ist zu beachten, dass das Spektrum immer von beiden
+Lichtquellen und der Iodprobe festgehalten wird, bevor die Kameraposition
+verschoben wird. Weil bei den verschiedenen Farbeindrücken unterschiedliche
+Helligkeiten vorliegen, muss auch immer der Kontrast neu eingestellt werden.
+Ein Bild eines Teils des Spektrums in entsprechenden Computerprogramm ist
+symbolisch in folgender \autoref{fig:comp} sichtbar.
 
 %todo foto vom comp programm \label{fig:comp}
 
-Um den Versuch repoduzieren zu können, sollte exakt der gleiche Spektrograph verwendet werden. Alle abgelesenen und 
-eingestellten Werte sind in folgender \autoref{tab:einstellungen} ersichtlich. Weil die Messwerte nicht immer klar
-von der entsprechenden Skala ablesbar waren wurde dies bei den Unsicherheiten berücksichtigt und in der Tabelle in der
-entsprechenden Spalte vermerkt.
-
+Um den Versuch repoduzieren zu können, sollte exakt der gleiche Spektrograph
+verwendet werden. Alle abgelesenen und eingestellten Werte sind in folgender
+\autoref{tab:einstellungen} ersichtlich. Weil die Messwerte nicht immer klar
+von der entsprechenden Skala ablesbar waren wurde dies bei den Unsicherheiten
+berücksichtigt und in der Tabelle in der entsprechenden Spalte vermerkt.
 
 \begin{table}[H]
-	\caption[Abgelesene Einstellungen]{Abgelesene Einstellungen\\
-	$f_i \dots$ Brennweite der i-ten Sammellinse in mm\\
-	$f_k \dots$ Brennweite des Kollimators\\
-	$SP \dots$ Spaltbreite des Eingangsspalt\\
-	$x \dots$ Entfernung der Kamera\\
-	$N_{Pi} \dots$ Neigung des i-ten Prismas (nicht in °)\\
-	$N_{PT} \dots$ Neigung des Tisches in °\\
-	$N_{PK} \dots$ Neigung der Kamera in ° }
+	\caption[Abgelesene Einstellungen]{Abgelesene Einstellungen                              \\
+		$f_i \dots$ Brennweite der i-ten Sammellinse in mm    \\
+		$f_k \dots$ Brennweite des Kollimators                \\
+		$SP \dots$ Spaltbreite des Eingangsspalt              \\
+		$x \dots$ Entfernung der Kamera                       \\
+		$N_{Pi} \dots$ Neigung des i-ten Prismas (nicht in °) \\
+		$N_{PT} \dots$ Neigung des Tisches in °               \\
+		$N_{PK} \dots$ Neigung der Kamera in °
+	}
 	\begin{tabular}{|l|l|l|}
-	\hline
-	\textbf{Bezeichnung} & \textbf{Messwert}        & \textbf{Anmerkung zur Unsicherheit} \\ \hline
-	$f_1$                & \SI{250}{\mm}            & Implizit gegeben                    \\ \hline
-	$f_2$                & \SI{50}{\mm}             & Implizit gegeben                    \\ \hline
-	$f_3$                & \SI{120}{\mm}            & Implizit gegeben                    \\ \hline
-	$f_k$                & \SI{141.6(1)}{\micro\m}  & Skala                               \\ \hline
-	$SP$                 & \SI{80(1)}{\micro\m}     & Mikrometerschraube                  \\ \hline
-	$x$                  & \SI{43.2(1)}{\mm}        & Skala                               \\ \hline
-	$N_{P1}$             & \SI{65(2)}{}             & Geschätzt mit Entfernungsmessung    \\ \hline
-	$N_{P2}$             & \SI{10.5(5)}{}           & Abgelesen auf entsprechender Skala  \\ \hline
-	$N_{P3}$             & \SI{6.5(2)}{}            & Abgelesen auf entsprechender Skala  \\ \hline
-	$N_{PT}$             & \SI{10.88(2)}{\degree}   & Skala                               \\ \hline
-	$N_{PK}$             & \SI{20(5)}{\degree}      & Augenmaß                            \\ \hline
+		\hline
+		\textbf{Bezeichnung} & \textbf{Messwert}       & \textbf{Anmerkung zur Unsicherheit} \\ \hline
+		$f_1$                & \SI{250}{\mm}           & Implizit gegeben                    \\ \hline
+		$f_2$                & \SI{50}{\mm}            & Implizit gegeben                    \\ \hline
+		$f_3$                & \SI{120}{\mm}           & Implizit gegeben                    \\ \hline
+		$f_k$                & \SI{141.6(1)}{\micro\m} & Skala                               \\ \hline
+		$SP$                 & \SI{80(1)}{\micro\m}    & Mikrometerschraube                  \\ \hline
+		$x$                  & \SI{43.2(1)}{\mm}       & Skala                               \\ \hline
+		$N_{P1}$             & \SI{65(2)}{}            & Geschätzt mit Entfernungsmessung    \\ \hline
+		$N_{P2}$             & \SI{10.5(5)}{}          & Abgelesen auf entsprechender Skala  \\ \hline
+		$N_{P3}$             & \SI{6.5(2)}{}           & Abgelesen auf entsprechender Skala  \\ \hline
+		$N_{PT}$             & \SI{10.88(2)}{\degree}  & Skala                               \\ \hline
+		$N_{PK}$             & \SI{20(5)}{\degree}     & Augenmaß                            \\ \hline
 	\end{tabular}
 	\label{tab:einstellungen}
-	\end{table}
+\end{table}
 
 \subsection{Gitterspektograph}
 
-Um das Spektrum mithilfe des Gitterspektrographen zu analysieren, wird der Aufbau aus \autoref{sec:aufbau} in den Strahlengang
-der entsprechenden Probe gestellt. Der Computer wird über die entsprechende Verbindung angeschlossen und das 
-Auswertungsprogramm gestartet. Bei der genauen Position des Sensors wird dabei darauf geachtet, dass die verzeichneten
-Peaks möglichst groß werden, diese aber nicht saturieren. Ein Ausschnitt dieser Einstellungen im Programm ist dabei symbolisch 
-in \autoref{fig:comp_gitter} sichtbar.
+Um das Spektrum mithilfe des Gitterspektrographen zu analysieren, wird der
+Aufbau aus \autoref{sec:aufbau} in den Strahlengang der entsprechenden Probe
+gestellt. Der Computer wird über die entsprechende Verbindung angeschlossen und
+das Auswertungsprogramm gestartet. Bei der genauen Position des Sensors wird
+dabei darauf geachtet, dass die verzeichneten Peaks möglichst groß werden,
+diese aber nicht saturieren. Ein Ausschnitt dieser Einstellungen im Programm
+ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 
 %todo foto vom comp programm \label{fig:comp_gitter}
 
-
 \section{Auswertung}\label{sec:auswertung}
-
 
 \subsection{Dispersionskurve des Prismenspektrographen}
 
-
 \subsection{Auflösevermögen}
-
 
 \subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
-
 \subsection{Disotiationsenergie des Jodmoleküls}
-
 
 \section{Diskussion}\label{sec:disk}
 
-
 \subsection{Prismenspektrograph}
 
-Allgemein ist die Benutzung des Prismenspektrographen sehr aufwändig, weil die Justierung der Linsen und Prismen sehr
-viel Zeit in Anspruch nimmt. Auch ist die Aufnahme des Spektrums, welches sich aus mehreren Einzelbildern zusammensetzt,
-klar zeitintensiver.
+Allgemein ist die Benutzung des Prismenspektrographen sehr aufwändig, weil die
+Justierung der Linsen und Prismen sehr viel Zeit in Anspruch nimmt. Auch ist
+die Aufnahme des Spektrums, welches sich aus mehreren Einzelbildern
+zusammensetzt, klar zeitintensiver.
 
 %todo referenz
-Beim Betrachten des Spektrums aus \autoref{fig:prismaspektrum} wird klar ersichtlich, dass die Linien durch diverse
-Abbildungsfehler eine leichte Krümmung aufweisen. Besonders stark ist dieser Effekt bei den niedrigeren Wellenlängen, 
-was sich durch die höhere Energie erklären lässt. Für die Auswertung wurde dadurch nur ein schmaler Bereich aus der Mitte
-genommen, um die Werte nicht durch diese Krümmung zu verfälschen.
-Die schärfe der Kamera wurde auf den gelbe Doppellinie bei 
+Beim Betrachten des Spektrums aus \autoref{fig:prismaspektrum} wird klar
+ersichtlich, dass die Linien durch diverse Abbildungsfehler eine leichte
+Krümmung aufweisen. Besonders stark ist dieser Effekt bei den niedrigeren
+Wellenlängen, was sich durch die höhere Energie erklären lässt. Für die
+Auswertung wurde dadurch nur ein schmaler Bereich aus der Mitte genommen, um
+die Werte nicht durch diese Krümmung zu verfälschen. Die schärfe der Kamera
+wurde auf den gelbe Doppellinie bei 
 %todo wellenlänge
 fokussiert, da diese besonders signifikant für die Lichtquelle ist.
 
-
 \subsection{Gitterspektrograph}
 
-Der Vorteil des Gitterspektrographen liegt vor allem in der einfachen Handhabung. So muss dieser nur angeschlossen
-werden und liefert sofort einen Intensitätsverlauf. Jedoch wird kein Spektrum erzeugt. Auch ist darauf zu achten, 
-dass die erzeugt Grafik nicht übersättigt ist, was zu einem Fehler führen würde.
+Der Vorteil des Gitterspektrographen liegt vor allem in der einfachen
+Handhabung. So muss dieser nur angeschlossen werden und liefert sofort einen
+Intensitätsverlauf. Jedoch wird kein Spektrum erzeugt. Auch ist darauf zu
+achten, dass die erzeugt Grafik nicht übersättigt ist, was zu einem Fehler
+führen würde.
 
-Im Bezug auf die Genauigkeit des Gitterspekogaphen sei angemerkt, dass dessen letzte Kalibrierung im Jahr 2008
-stattgefunden hat, was darauf schließen lässt, dass eine erneute Kalibrierung die Genauigkeit verbessern könnte.
-
+Im Bezug auf die Genauigkeit des Gitterspekogaphen sei angemerkt, dass dessen
+letzte Kalibrierung im Jahr 2008 stattgefunden hat, was darauf schließen lässt,
+dass eine erneute Kalibrierung die Genauigkeit verbessern könnte.
 
 \subsection{Auflösevermögen}
-Die erhaltenen Werte der Auflösevermögen sind in folgender \autoref{tab:vergleich_auflosung} gegenübergestellt.
+Die erhaltenen Werte der Auflösevermögen sind in folgender
+\autoref{tab:vergleich_auflosung} gegenübergestellt.
 
 %todo vergleich der Werte
-Ein Vergleich dieser Werte zeigt klar, dass der Prismenspektrograph eine deutlich höhere Auflösung hat.
-Dis wird auch bei der qualitativen Betrachtung der entsprechenden Bilder sichtbar.
-
+Ein Vergleich dieser Werte zeigt klar, dass der Prismenspektrograph eine
+deutlich höhere Auflösung hat. Dis wird auch bei der qualitativen Betrachtung
+der entsprechenden Bilder sichtbar.
 
 \subsection{Disotiationsenergie des Jodmoleküls}
 
-Die erhaltenen Werte für die Disotiationsenergie sind in folgender \autoref{tab:vergleich_disotiation} dem 
-Literaturwert gegenübergestellt.
+Die erhaltenen Werte für die Disotiationsenergie sind in folgender
+\autoref{tab:vergleich_disotiation} dem Literaturwert gegenübergestellt.
 
 %todo vergleich der Werte
-Der Literaturwert ist also in beiden Fehlerintervallen enthalten. Der erhaltene Wert des Prismenspektrographen
-liegt jedoch deutlich näher am Literaturwert. Auch ist dessen Unsicherheit kleiner.
-
+Der Literaturwert ist also in beiden Fehlerintervallen enthalten. Der erhaltene
+Wert des Prismenspektrographen liegt jedoch deutlich näher am Literaturwert.
+Auch ist dessen Unsicherheit kleiner.
 
 \section{Zusammenfassung}\label{sec:zs}
-Zunächst lässt sich feststellen, dass die Handhabung des Gitterspektrographen deutlich einfacher und vor allem schneller
-geht. Die erhaltenen Ergebnisse des Prismenspektrographen sind jedoch genauer am Literaturwert und haben auch eine 
-geringere Unsicherheit. Weiters liegt auch eine bessere Auflösung vor. Wodurch sich der Zeitaufwand insgesamt lohnt.
-Es sei jedoch auch angemerkt dass sich die Untersuchung von Lichtquellen durch den Prismenspektrographen nur für 
-Lichtquellen eignet, die leicht zum Spektrographen gebracht werden können, da dieser aufgrund seiner Größe und des 
-Justierungsaufwands nur sehr schwer bewegt werden kann.
+Zunächst lässt sich feststellen, dass die Handhabung des Gitterspektrographen
+deutlich einfacher und vor allem schneller geht. Die erhaltenen Ergebnisse des
+Prismenspektrographen sind jedoch genauer am Literaturwert und haben auch eine
+geringere Unsicherheit. Weiters liegt auch eine bessere Auflösung vor. Wodurch
+sich der Zeitaufwand insgesamt lohnt. Es sei jedoch auch angemerkt dass sich
+die Untersuchung von Lichtquellen durch den Prismenspektrographen nur für
+Lichtquellen eignet, die leicht zum Spektrographen gebracht werden können, da
+dieser aufgrund seiner Größe und des Justierungsaufwands nur sehr schwer bewegt
+werden kann.
 
 \subsection{Spektren}
 
-Im Rahmen dieses Praktikums wurden die Spektren einer Hg-Lampe, einer Halogenlampe und einer Jodprobe, sowohl mit einem
-Prismenspektrographen als auch mit einem Gitterspektrographen bestimmt.
-Die erhaltenen Spektren sind in den 
+Im Rahmen dieses Praktikums wurden die Spektren einer Hg-Lampe, einer
+Halogenlampe und einer Jodprobe, sowohl mit einem Prismenspektrographen als
+auch mit einem Gitterspektrographen bestimmt. Die erhaltenen Spektren sind in
+den 
 %todo referenzen
 ersichtlich.
 
 \subsection{Auflösevermögen}
 
-Die erhaltenen Werte für die Auflösevermögen sind in folgender \autoref{tab:zs_auflosevermogen} ersichtlich.
+Die erhaltenen Werte für die Auflösevermögen sind in folgender
+\autoref{tab:zs_auflosevermogen} ersichtlich.
 %todo tab
-
 
 \subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
@@ -383,15 +419,9 @@ Die erhaltenen Werte für die Auflösevermögen sind in folgender \autoref{tab:z
 
 \subsection{Disotiationsenergie des Jodmoleküls}
 
-Die erhaltenen Werte für die Disotiationsenergien sind in folgender \autoref{tab:zs_disenergie} ersichtlich.
+Die erhaltenen Werte für die Disotiationsenergien sind in folgender
+\autoref{tab:zs_disenergie} ersichtlich.
 %todo tab
-
-
-
-
-
-
-
 
 \newpage
 
