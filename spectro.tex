@@ -23,7 +23,7 @@
 	\item Erzeugung der Dispersionskurve des Prismenspektrographen.
 	\item Bestimmung des Auflösevermögen der beiden Spektrographen.
 	\item Bestimmung der Wellenlänge der Jod-Absorbtionsbandkanten.
-	\item Bestimmung der Disotiationsenergie des Jodmoleküls.
+	\item Bestimmung der Dissoziationsenergie des Jodmoleküls.
 \end{itemize}
 
 \section{Grundlagen}\label{sec:Grund}
@@ -120,7 +120,7 @@ ausbreiten und ein Spektrum bilden.
 
 \begin{equation}
 	d \sin{\theta} = n \lambda
-	\label{eq:brechung}
+	\label{eq:beugung}
 \end{equation}
 
 $d$ bezeichnet dabei den Gitterabstand, $\theta$ den Beugungswinkel, $n$ die entsprechende Ordnung und $\lambda$ die Wellenlänge.
@@ -131,7 +131,7 @@ Eine schematische Skizze des Strahlengangs ist in \autoref{fig:gitter} sichtbar.
 		\includegraphics[width =\textwidth]{./figures/skizze_gitter.png}
 	\end{center}
 	\caption[Skizzierter Strahlengang durch ein Gitter] {Skizzierter Strahlengang durch ein
-		Gitter, entnommen aus \cite{unterlagen}
+		Gitter, entnommen aus~\cite{unterlagen}
 	}\label{fig:gitter}
 \end{figure}
 
@@ -152,7 +152,7 @@ elektromagnetischen Strahlung zu messen.
 
 %todo max brachst du noch irgendwelche formeln?
 
-\section{Versuchsaufbau} \label{sec:aufbau}
+\section{Versuchsaufbau}\label{sec:aufbau}
 
 \subsection{Prismenspekrograph}
 
@@ -217,8 +217,7 @@ passenden Halterung direkt vor die Lichtquelle gestellt.
 	}\label{fig:aufbau_gitter}
 \end{figure}
 
-\section{Geräteliste}
-\label{sec:geraeteliste}
+\section{Geräteliste}\label{sec:geraeteliste}
 
 Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte
 verwendet.
@@ -226,21 +225,20 @@ verwendet.
 \begin{table}[H]
 	\caption{Verwendete Geräte
 	}
-	\begin{tabular}{|l|l|l|l|l|}
-		\hline
-		\textbf{Gerätetyp} & \textbf{Hersteller} & \textbf{Typ}     & \textbf{Inventar-Nr} & \textbf{Anmerkung} \\ \hline
-		Prismaspektogaph   & Steinheil           &                  & 0153624              &                    \\ \hline
-		Gitterspektograph  & Ocean Optics        & USB4000          & 0101417              & 350-1000 nm        \\ \hline
-		Kamera             & Canon               & EOS 600D         & 0206884              & ohne Linse         \\ \hline
-		Lichtleiter        & Ocean Optics        & OP1000-2-UV-BX   &                      &                    \\ \hline
-		Hg-Dampflampe      &                     & Hg-Cd            & F21                  &                    \\ \hline
-		Halogenlampe       & Leybold             &                  & F4                   &                    \\ \hline
-		Iodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ \hline
-		Sammellinsen       &                     & f = 250, 50, 120 &                      & 3 x                \\ \hline
-		Optische Bank      &                     &                  &                      & höhenverstellbar   \\ \hline
-		Linsenhalter       &                     &                  &                      &                    \\ \hline
-	\end{tabular}
-	\label{tab:gerate}
+	\begin{tblr}{cells={font=\footnotesize}, colspec={lllll}}
+		\textbf{Gerätetyp} & \textbf{Hersteller} & \textbf{Typ}     & \textbf{Inventar-Nr} & \textbf{Anmerkung} \\ 
+		\toprule
+		Prismaspektogaph   & Steinheil           &                  & 0153624              &                    \\ 
+		Gitterspektograph  & Ocean Optics        & USB4000          & 0101417              & 350-1000 nm        \\ 
+		Kamera             & Canon               & EOS 600D         & 0206884              & ohne Linse         \\ 
+		Lichtleiter        & Ocean Optics        & OP1000-2-UV-BX   &                      &                    \\ 
+		Hg-Dampflampe      &                     & Hg-Cd            & F21                  &                    \\ 
+		Halogenlampe       & Leybold             &                  & F4                   &                    \\ 
+		Iodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ 
+		Sammellinsen       &                     & f = 250, 50, 120 &                      & 3 x                \\ 
+		Optische Bank      &                     &                  &                      & höhenverstellbar   \\ 
+		Linsenhalter       &                     &                  &                      &                    \\ 
+	\end{tblr}\label{tab:gerate}
 \end{table}
 
 %V/1003, Qu, V/748/4
@@ -278,7 +276,7 @@ symbolisch in folgender \autoref{fig:comp} sichtbar.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.95\textwidth]{figures/camerasoftware.png}
+		\includegraphics[width=0.15\textwidth]{figures/camerasoftware.png}
 	\end{center}
 	\caption{Das Software Interface für die Kontrolle der Kamera
 	}\label{fig:comp}
@@ -314,8 +312,7 @@ berücksichtigt und in der Tabelle in der entsprechenden Spalte vermerkt.
 		$N_{P3}$             & \SI{6.5(2)}{}           & Abgelesen auf entsprechender Skala  \\ \hline
 		$N_{PT}$             & \SI{10.88(2)}{\degree}  & Skala                               \\ \hline
 		$N_{PK}$             & \SI{20(5)}{\degree}     & Augenmaß                            \\ \hline
-	\end{tabular}
-	\label{tab:einstellungen}
+	\end{tabular}\label{tab:einstellungen}
 \end{table}
 
 \subsection{Gitterspektograph}
@@ -328,9 +325,9 @@ dabei darauf geachtet, dass die verzeichneten Peaks möglichst groß werden,
 diese aber nicht saturieren. Ein Ausschnitt dieser Einstellungen im Programm
 ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.95\textwidth]{figures/gitterSpektComp.png}
+		\includegraphics[width=0.95\textwidth, height=4cm]{figures/gitterSpektComp.png}
 	\end{center}
 	\caption{Aufnahme des Referenzspektrums mittels des Gitterspektrographs und Software
 	}\label{fig:comp_gitter}
@@ -338,21 +335,21 @@ ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 
 \section{Auswertung}\label{sec:auswertung}
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/Hg_plot.pdf}
 	\end{center}
 	\caption{}\label{fig:prismaHgSpektrum}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/Halo_plot.pdf}
 	\end{center}
 	\caption{}\label{fig:prismaHaloSpektrum}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/I_plot.pdf}
 	\end{center}
@@ -361,7 +358,7 @@ ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 
 \subsection{Dispersionskurve des Prismenspektrographen}
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/mappingPxToWaveLength.pdf}
 	\end{center}
@@ -372,7 +369,7 @@ ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 
 \subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/intensity_spektrum_gitter.pdf}
 	\end{center}
@@ -456,9 +453,9 @@ Ein Vergleich dieser Werte zeigt klar, dass der Prismenspektrograph eine
 deutlich höhere Auflösung hat. Dis wird auch bei der qualitativen Betrachtung
 der entsprechenden Bilder sichtbar.
 
-\subsection{Disotiationsenergie des Jodmoleküls}
+\subsection{Dissoziationsenergie des Jodmoleküls}
 
-Die erhaltenen Werte für die Disotiationsenergie sind in folgender
+Die erhaltenen Werte für die Dissoziationsenergie sind in folgender
 \autoref{tab:vergleich_disotiation} dem Literaturwert gegenübergestellt.
 
 %todo vergleich der Werte
@@ -496,15 +493,15 @@ Die erhaltenen Werte für die Auflösevermögen sind in folgender
 
 %todo 
 
-\subsection{Disotiationsenergie des Jodmoleküls}
+\subsection{Dissoziationsenergie des Jodmoleküls}
 
-Die erhaltenen Werte für die Disotiationsenergien sind in folgender
+Die erhaltenen Werte für die Dissoziationsenergien sind in folgender
 \autoref{tab:zs_disenergie} ersichtlich.
 %todo tab
 
 \newpage
 
-\printbibliography
+% \printbibliography
 \listoffigures
 \listoftables
 \end{document}
