@@ -70,7 +70,8 @@ def plot_extinction(P: Project) -> None:
     )
 
     ax.set_title("Extinktionsspektrum einer Iod-Zelle vor einer Halogenlampe")
-    P.ax_legend_all(loc=1)
+    P.ax_legend_all(loc=0)
+    P.figure.tight_layout(pad=1)
     ax = P.savefig(f"prism_extinction.pdf", clear=True)
 
     low = int(nmToPx(508))
@@ -102,6 +103,7 @@ def plot_extinction(P: Project) -> None:
     )
     ax.set_title("Extinktionsspektrum einer Iod-Zelle vor einer Halogenlampe")
     P.ax_legend_all(loc=0)
+    P.figure.tight_layout(pad=1)
     ax = P.savefig(f"prism_ausschnitt_extinction.pdf", clear=True)
 
     waveNumber(P, l_peaks / 10e6, "Prisma")
@@ -126,6 +128,7 @@ def plot_extinction(P: Project) -> None:
     )
     ax.set_title("Extinktionsspektrum einer Iod-Zelle vor einer Halogenlampe")
     P.ax_legend_all(loc=1)
+    P.figure.tight_layout(pad=1)
     ax = P.savefig(f"gitter_extinction.pdf", clear=True)
 
     filter = np.logical_and((550 < _l), (_l < 615))
@@ -155,6 +158,7 @@ def plot_extinction(P: Project) -> None:
     )
     ax.set_title("Extinktionsspektrum einer Iod-Zelle vor einer Halogenlampe")
     P.ax_legend_all(loc=0)
+    P.figure.tight_layout(pad=1)
     ax = P.savefig(f"gitter_ausschnitt_extinction.pdf", clear=True)
     waveNumber(P, l_peaks / 10e6, "Gitter")
     P.figure.clear()
@@ -176,6 +180,7 @@ def plot_extinction(P: Project) -> None:
     ax.plot(_l, Iod / max_val, label=r"Halogen mit Iodrohr")
     ax.set_title("Intensitätskurve den ver. Proben (Gitterspektrograph)")
     P.ax_legend_all(loc=0)
+    P.figure.set_size_inches((11, 6))
     ax = P.savefig(f"intensity_spektrum_gitter.pdf", clear=True)
 
 
@@ -225,6 +230,7 @@ def waveNumber(P: Project, peaks, name: str):
 
     ax.set_title("Quadratische Abhängigkeit der Wellenzahlen")
     P.ax_legend_all(loc=1)
+    P.figure.tight_layout(pad=1)
     ax = P.savefig(f"waveNumberFit{name}.pdf", clear=True)
 
     # Wavenumber prism difference
@@ -276,6 +282,7 @@ def waveNumber(P: Project, peaks, name: str):
 
     ax.set_title("Lineare Abhängigkeit der Wellenzahlenabstände")
     P.ax_legend_all(loc=1)
+    P.figure.tight_layout(pad=1)
     ax = P.savefig(f"waveNumberDeltasFit{name}.pdf", clear=True)
 
     # Calculation
@@ -332,6 +339,6 @@ if __name__ == "__main__":
     plt.rcParams["axes.axisbelow"] = True
     P = Project("Spektrometer", global_variables=gv, global_mapping=gm, font=13)
     P.output_dir = "./"
-    P.figure.set_size_inches((11, 6))
+    P.figure.set_size_inches((11, 3))
     pxToNm, nmToPx = genBasisMap(P)
     plot_extinction(P)
