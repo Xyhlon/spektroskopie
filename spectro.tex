@@ -251,17 +251,15 @@ verwendet.
 
 Nachdem die Linsen und Prismen wie bereits in \autoref{sec:aufbau} angeführt,
 aufgebaut wurden, wird das, von der Kamera erfasste, Spektrum am Computer mit
-der Software
-%todo softwarename
-betrachtet. Es ist dafür zu sorgen, dass die einzelnen Linien der Lichtquelle
-scharf erscheinen und eine möglichst gute Nutzung der gesamten Breite des zur
-Verfügung stehenden Schirms vorliegt. Dies wird durch Verstellen und
-anschließender Feinjustierung der Neigung und des Abstands der Kamera zum
-Spektographen erreicht. Um das abgebildete Spektrum sichtbar zu machen, wird
-ein Streifen Klebeband an der entsprechenden Stelle des Spektrographen
-angebracht. Um dafür zu sorgen, dass kein Störlicht auf die Kamera gelangt,
-wird das gesamte Raumlicht abgedunkelt und ein Karton seitlich an die Kamera
-gehalten, um kein Licht seitlich von der Lichtquelle zu bekommen.
+der Software SpectraSuite betrachtet. Es ist dafür zu sorgen, dass die
+einzelnen Linien der Lichtquelle scharf erscheinen und eine möglichst gute
+Nutzung der gesamten Breite des zur Verfügung stehenden Schirms vorliegt. Dies
+wird durch Verstellen und anschließender Feinjustierung der Neigung und des
+Abstands der Kamera zum Spektographen erreicht. Um das abgebildete Spektrum
+sichtbar zu machen, wird ein Streifen Klebeband an der entsprechenden Stelle
+des Spektrographen angebracht. Um dafür zu sorgen, dass kein Störlicht auf die
+Kamera gelangt, wird das gesamte Raumlicht abgedunkelt und ein Karton seitlich
+an die Kamera gehalten, um kein Licht seitlich von der Lichtquelle zu bekommen.
 
 Weil nicht das gesamte Spektrum mit einem Foto aufgezeichnet werden kann wird
 zunächst bestimmt, wie groß der erfasste Bereich ist. Dazu wird zunächst die
@@ -278,7 +276,13 @@ Helligkeiten vorliegen, muss auch immer der Kontrast neu eingestellt werden.
 Ein Bild eines Teils des Spektrums in entsprechenden Computerprogramm ist
 symbolisch in folgender \autoref{fig:comp} sichtbar.
 
-%todo foto vom comp programm \label{fig:comp}
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/camerasoftware.png}
+	\end{center}
+	\caption{Das Software Interface für die Kontrolle der Kamera
+	}\label{fig:comp}
+\end{figure}
 
 Um den Versuch repoduzieren zu können, sollte exakt der gleiche Spektrograph
 verwendet werden. Alle abgelesenen und eingestellten Werte sind in folgender
@@ -324,17 +328,92 @@ dabei darauf geachtet, dass die verzeichneten Peaks möglichst groß werden,
 diese aber nicht saturieren. Ein Ausschnitt dieser Einstellungen im Programm
 ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 
-%todo foto vom comp programm \label{fig:comp_gitter}
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/gitterSpektComp.png}
+	\end{center}
+	\caption{Aufnahme des Referenzspektrums mittels des Gitterspektrographs und Software
+	}\label{fig:comp_gitter}
+\end{figure}
 
 \section{Auswertung}\label{sec:auswertung}
 
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/Hg_plot.pdf}
+	\end{center}
+	\caption{}\label{fig:prismaHgSpektrum}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/Halo_plot.pdf}
+	\end{center}
+	\caption{}\label{fig:prismaHaloSpektrum}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/I_plot.pdf}
+	\end{center}
+	\caption{}\label{fig:prismaIodSpektrum}
+\end{figure}
+
 \subsection{Dispersionskurve des Prismenspektrographen}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/mappingPxToWaveLength.pdf}
+	\end{center}
+	\caption{}\label{fig:dispersionkurve}
+\end{figure}
 
 \subsection{Auflösevermögen}
 
 \subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
-\subsection{Disotiationsenergie des Jodmoleküls}
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/intensity_spektrum_gitter.pdf}
+	\end{center}
+	\caption{}\label{fig:spektraGitter}
+\end{figure}
+
+\subsection{Dissoziationsenergie des Jodmoleküls}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/prism_extinction.pdf}
+		\includegraphics[width=0.95\textwidth]{figures/gitter_extinction.pdf}
+	\end{center}
+	\caption{}\label{fig:extinktionkurven}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/prism_ausschnitt_extinction.pdf}
+		\includegraphics[width=0.95\textwidth]{figures/gitter_ausschnitt_extinction.pdf}
+	\end{center}
+	\caption{}\label{fig:ausschnittPeaks}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/waveNumberFitPrisma.pdf}
+		\includegraphics[width=0.95\textwidth]{figures/waveNumberFitGitter.pdf}
+	\end{center}
+	\caption{}\label{fig:wellenZahlenFit}
+
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/waveNumberDeltasFitPrisma.pdf}
+		\includegraphics[width=0.95\textwidth]{figures/waveNumberDeltasFitGitter.pdf}
+	\end{center}
+	\caption{}\label{fig:wellenZahlenDeltaFit}
+
+\end{figure}
 
 \section{Diskussion}\label{sec:disk}
 
