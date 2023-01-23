@@ -288,7 +288,7 @@ def waveNumber(P: Project, peaks, name: str):
     print("Scheitelenergie")
     E = h * speed_of_light * v
     E_ev = E / elementary_charge
-    E_diss = E_ev - ufloat(0.970, 0.005)
+    E_diss = E_ev - ufloat(0.970, 0.005)  # Anregungsenergie
     print(f"{E=}", f"{E_ev=}", f"{E_diss=}")
     print("----------------------------------")
 
