@@ -334,6 +334,16 @@ ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 \end{figure}
 
 \section{Auswertung}\label{sec:auswertung}
+Um zu sehen wie sich die Unsicherheit der Messungen bis in die Ergebnisse
+fortpflanzt, ist erweiterte Gauss-Methode verwendet worden. Die Grundlagen
+dieser Methode stammen von den Powerpointfolien von
+GUM~\cite{wolfgang_kessel_isobipm-gum_2004}. Für die Auswertung ist die
+Progammiersprache Python im speziellen die Pakete \verb#labtool-ex2#,
+\verb#pandas#, \verb#sympy#, \verb#lmfit# zur Hilfe genommen worden.
+\verb#lmfit# wurde für das Fitten hergenommen, \verb#sympy# wurde für
+symbolische Manipulation hergenommen und die restlichen Pakete für leichters
+handhaben der Daten. Dies wurde aber alles durch \verb#labtool-ex2#
+abstrahiert.
 
 \begin{figure}[H]
 	\begin{center}
@@ -440,9 +450,9 @@ Intensitätsverlauf. Jedoch wird kein Spektrum erzeugt. Auch ist darauf zu
 achten, dass die erzeugt Grafik nicht übersättigt ist, was zu einem Fehler
 führen würde.
 
-Im Bezug auf die Genauigkeit des Gitterspekogaphen sei angemerkt, dass dessen
-letzte Kalibrierung im Jahr 2008 stattgefunden hat, was darauf schließen lässt,
-dass eine erneute Kalibrierung die Genauigkeit verbessern könnte.
+Im Bezug auf die Genauigkeit des Gitterspektrographen sei angemerkt, dass
+dessen letzte Kalibrierung im Jahr 2008 stattgefunden hat, was darauf schließen
+lässt, dass eine erneute Kalibrierung die Genauigkeit verbessern könnte.
 
 \subsection{Auflösevermögen}
 Die erhaltenen Werte der Auflösevermögen sind in folgender
@@ -500,6 +510,11 @@ Die erhaltenen Werte für die Dissoziationsenergien sind in folgender
 %todo tab
 
 \newpage
+
+\section{Appendix}\label{sec:Appendix}
+\subsection{Code}\label{sec:code}
+\lstinputlisting[language=Python,caption=For Merging the recorded images and determination of the dispersion relation. The resoltion power of the prism was also determined.]{./analysis/imageprep.py}
+\lstinputlisting[language=Python,caption=The wavelength extraction of the band eges in the Iodine absorptions spectrum and calculation of the dissociation energy of iodine molecule in ground state.]{./analysis/extinction.py}
 
 % \printbibliography
 \listoffigures
