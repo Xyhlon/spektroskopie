@@ -11,9 +11,11 @@
 	Spektrograph}
 % Fußzeile
 
+\addbibresource{spectro.bib}
+
 \begin{document}
 
-%\includepdf{deckblatt.pdf}
+\includepdf{deckblatt.pdf}
 \section{Aufgabenstellung\label{sec:Aufgabenstellung}}
 
 \begin{itemize}
@@ -30,8 +32,6 @@
 \section{Grundlagen}\label{sec:Grund}
 
 \subsection{Molekulare Spektroskopie}
-
-test
 
 Wenn elektromagnetische Strahlung mit einem Molekül in Wechselwirkung tritt,
 kann sie absorbiert, emittiert oder gestreut werden, je nach der Energie der
@@ -75,19 +75,17 @@ Frequenzen der Strahlung nach dem Snelliuschen Brechungsgesetz,
 $\theta_1$ und $\theta_2$ bezeichnet dabei den Eintritts bzw. Austrittswinkel und $n_1$ und $n_2$ die entsprechenden Brechzahlen.
 Der Strahlengang durch ein Prisma ist in folgender \autoref{fig:skizze} skizziert.
 
-%todo cite
-
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/skizze.png}
 	\end{center}
 	\caption[Skizzierter Strahlengang durch ein Prisma] {Skizzierter Strahlengang durch ein
-		Prisma, entnommen aus \cite{unterlagen} \\
-		S \(\dots\) Spalt                       \\
-		C \(\dots\) Kondensor-Linse             \\
-		Pr \(\dots\) Prisma                     \\
-		F \(\dots\) Fokusier-Linse              \\
-		CCD \(\dots\) Schirm                    \\
+		Prisma, entnommen aus~\cite{noauthor_spectrograph_2016} \\
+		S \(\dots\) Spalt                                       \\
+		C \(\dots\) Kondensor-Linse                             \\
+		Pr \(\dots\) Prisma                                     \\
+		F \(\dots\) Fokusier-Linse                              \\
+		CCD \(\dots\) Schirm                                    \\
 		$\delta$ \(\dots\) Brechungswinkel
 	}\label{fig:skizze}
 \end{figure}
@@ -134,7 +132,7 @@ Eine schematische Skizze des Strahlengangs ist in \autoref{fig:gitter} sichtbar.
 		\includegraphics[width =\textwidth]{./figures/skizze_gitter.png}
 	\end{center}
 	\caption[Skizzierter Strahlengang durch ein Gitter] {Skizzierter Strahlengang durch ein
-		Gitter, entnommen aus~\cite{unterlagen}
+		Gitter, entnommen aus~\cite{noauthor_spectrograph_2016}
 	}\label{fig:gitter}
 \end{figure}
 
@@ -416,11 +414,12 @@ Zuletzt nun das Spektrum von Iod beleuchtet mit der Halogenlampe, siehe
 \subsubsection{Dispersionskurve des Prismenspektrographen}\label{sec:DispersionPrism}
 
 Durch Identifikation der Peaks im Referenzspektrum und der Zuordnung mit den
-bekannten Wellenlängen dieser Peaks, aus der Angabe~\cite{}, ist es möglich die
-Dispersionskurve mittels eines quadratischen Fit (in Scheitelpunktform $\lambda
-	= a (x-b)^2 + c$) zu beschreiben. Da jedoch nur gewisse Wellenlängen der Peaks
-bekannt sind und der Cyan Peak bei unserer Messung nicht aufscheint, sind
-folgende Wellenlängen und deren zugeordneten Peaks fürs Fitten genommen worden.
+bekannten Wellenlängen dieser Peaks, aus der
+Angabe~\cite{noauthor_spectrograph_2016}, ist es möglich die Dispersionskurve
+mittels eines quadratischen Fit (in Scheitelpunktform $\lambda = a (x-b)^2 +
+	c$) zu beschreiben. Da jedoch nur gewisse Wellenlängen der Peaks bekannt sind
+und der Cyan Peak bei unserer Messung nicht aufscheint, sind folgende
+Wellenlängen und deren zugeordneten Peaks fürs Fitten genommen worden.
 
 \begin{enumerate}
 	\item Rot \SI{643.9}{\nano\meter}
@@ -612,7 +611,7 @@ Literaturwert gegenübergestellt.
 
 \begin{enumerate}
 	\item $E_\text{Diss} = \SI{1.568(12)}{\electronvolt}$
-	\item $E_{\text{Diss}_\text{lit}} = \SI{1.57}{\electronvolt}$
+	\item $E_{\text{Diss}_\text{lit}} = \SI{1.57}{\electronvolt}$~\cite{noauthor_bond-dissociation_2023}
 \end{enumerate}
 
 Der Literaturwert ist also in beiden Fehlerintervallen enthalten. Der erhaltene
@@ -656,7 +655,8 @@ Wellenzahl $\nu$ und beträgt:
 
 Der erhaltene Werte für die Dissoziationsenergie ist $E_\text{Diss} =
 	\SI{1.568(12)}{\electronvolt}$ und der Literaturwert ist
-$E_{\text{Diss}_\text{lit}} = \SI{1.57}{\electronvolt}$
+$E_{\text{Diss}_\text{lit}} =
+	\SI{1.57}{\electronvolt}$~\cite{noauthor_bond-dissociation_2023}
 
 \newpage
 
