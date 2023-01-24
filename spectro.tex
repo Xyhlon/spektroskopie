@@ -488,9 +488,6 @@ Bearbeitung der Peaks gewährleistet.
 	}\label{fig:ausschnittPeaks}
 \end{figure}
 
-Da diesen Peaks gleich eine Wellenlänge zu geordnet wird kann die Wellenlänge
-der Bandlücke abgelesen werden.
-
 Die Wellenlängen der Peaks lassen nochmals, Aufgrund des Deslandre'sche
 Gesetzt, mittels eines quadratischen Fits (in Scheitelpunktform $\nu = a
 	(x-b)^2 + c$) beschreiben und finden dadurch einen Isomorphismus zwischen den
@@ -579,6 +576,11 @@ wurde auf den gelbe Doppellinie bei \SI{579.0}{\nano\meter} und
 \SI{576.9}{\nano\meter} fokussiert, da diese besonders signifikant für die
 Lichtquelle ist.
 
+Aufgrund der kurzen Belichtungszeit konnte der Cyan Peak nicht war genommen
+werden und eine Gamma-Korrektur musste durchgeführt werden, damit die Peaks
+markanter werden. Daher wird Empfohlen die Belichtungszeit nicht zu kurz zu
+wählen.
+
 \subsection{Gitterspektrograph}
 
 Der Vorteil des Gitterspektrographen liegt vor allem in der einfachen
@@ -602,10 +604,14 @@ der entsprechenden Bilder sichtbar.
 
 \subsection{Dissoziationsenergie des Jodmoleküls}
 
-Die erhaltenen Werte für die Dissoziationsenergie sind in folgender
-\autoref{tab:vergleich_disotiation} dem Literaturwert gegenübergestellt.
+Der erhaltene Wert für die Dissoziationsenergie ist in folgenden Liste dem
+Literaturwert gegenübergestellt.
 
-%todo vergleich der Werte
+\begin{enumerate}
+	\item $E_\text{Diss} = \SI{1.568(12)}{\electronvolt}$
+	\item $E_{\text{Diss}_\text{lit}} = \SI{1.57}{\electronvolt}$
+\end{enumerate}
+
 Der Literaturwert ist also in beiden Fehlerintervallen enthalten. Der erhaltene
 Wert des Prismenspektrographen liegt jedoch deutlich näher am Literaturwert.
 Auch ist dessen Unsicherheit kleiner.
@@ -637,7 +643,11 @@ Die erhaltenen Werte für die Auflösevermögen sind in folgender
 
 \subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
-%todo 
+Die Wellenlänge der Jod-Absorbtionsbandkanten ist das reziproke der gefundenen
+Wellenzahl $\nu$ und beträgt:
+\begin{equation*}
+	\lambda = \frac{1}{\nu} = \SI{498(2)}{\nano\meter}
+\end{equation*}
 
 \subsection{Dissoziationsenergie des Jodmoleküls}
 
