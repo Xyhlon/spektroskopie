@@ -110,7 +110,7 @@ wird in den Strahlengang gestellt, und ein Teil der elektromagnetischen
 Strahlung wird von der Probe absorbiert, emittiert oder gestreut.
 
 Das Echelle-Gitter ist ein Beugungsgitter, das aus einem transparenten
-optischen Element wie Glas oder Quarz besteht und mit einem periodischen Muster
+optischen Element wie Glas oder Quarz besteht und mit einem perJodischen Muster
 aus parallelen Linien versehen ist. Es wird im Strahlengang der
 elektromagnetischen Strahlung angebracht und dient dazu, die Strahlung in ihre
 einzelnen Wellenlängen oder Frequenzen zu zerlegen. Das Echelle-Gitter
@@ -149,14 +149,15 @@ Frequenz erstellt, das als Spektrum bezeichnet wird.
 Die Brennebene ist die Ebene, in der das Spektrum gebildet wird, und sie
 befindet sich in der Regel im Brennpunkt des Kollimators. Die Kamera oder der
 Rekorder wird in der Fokusebene platziert, um die Intensität der
-elektromagnetischen Strahlung zu messen.
+elektromagnetischen Strahlung zu messen~\cite{noauthor_spectrograph_2016}.
 
 \subsection{Verwendete Formeln}
 
-Für die Auswertung und das restliche Protokoll werden die in diesem Kapitel aufgelisteten Formeln benötigt.
+Für die Auswertung und das restliche Protokoll werden die in diesem Kapitel
+aufgelisteten Formeln benötigt.
 
-
-Grundsätzlich lässt sich das Auflösevermögen $A$ nach folgender \autoref{eq:auflosung} bestimmen.
+Grundsätzlich lässt sich das Auflösevermögen $A$ nach folgender
+\autoref{eq:auflosung} bestimmen.
 
 \begin{equation}
 	A = \frac{\lambda}{\Delta\lambda}
@@ -178,8 +179,7 @@ Für die Energie $E$ gilt nach dem Photoeffekt folgendes.
 
 \begin{equation}
 	E = h f \\
-	c = \lambda 
-	\label{eq:energie}
+	c = \lambda \label{eq:energie}
 \end{equation}
 
 $h$ steht dabei für die Planck-Konstante, $f$ für die Frequenz und $c$ für die Lichtgeschwindigkeit.
@@ -191,9 +191,6 @@ Die Wellenzahl $\nu$ steht in folgender Relation zur Wellenlänge.
 	\label{eq:wellenzahl}
 \end{equation}
 
-
-
-%todo iod
 \section{Versuchsaufbau}\label{sec:aufbau}
 
 \subsection{Prismenspektrograph}
@@ -204,7 +201,7 @@ Linsenhalter auf der optischen Bank markiert, um später beim Wechsel der
 Lichtquelle die selbe Position zu ermöglichen. Bei den Linsen wir dabei
 versucht, den vorliegenden Lichtstrahl, so gut wie möglich, auf den
 Eingangsspalt des Spektrographen zu fokusieren, um eine möglichst hohe
-Intensität zu gewährleisten. Auch die Position, auf die die Iodzelle gestellt
+Intensität zu gewährleisten. Auch die Position, auf die die Jodzelle gestellt
 wird, wird mit einem leeren Linsenhalter markiert.
 
 \begin{figure}[H]
@@ -216,7 +213,7 @@ wird, wird mit einem leeren Linsenhalter markiert.
 		1 \(\dots\) Lichtquelle                                                  \\
 		2 \(\dots\) Markierung für die Lichtquelle                               \\
 		3 \(\dots\) Verwendete Sammellinsen (Brennweiten: v.l.n.r. 250, 50, 120) \\
-		4 \(\dots\) Markierung für die Iodquelle                                 \\
+		4 \(\dots\) Markierung für die Jodquelle                                 \\
 		5 \(\dots\) Eintrittsspalt in den Spektrographen                         \\
 		6 \(\dots\) Prismen in Spektrographen                                    \\
 		7 \(\dots\) Halterung für Kamera                                         \\
@@ -278,7 +275,7 @@ verwendet.
 		Lichtleiter        & Ocean Optics        & OP1000-2-UV-BX   &                      &                    \\ 
 		Hg-Dampflampe      &                     & Hg-Cd            & F21                  &                    \\ 
 		Halogenlampe       & Leybold             &                  & F4                   &                    \\ 
-		Iodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ 
+		Jodprobe           & Spindler \& Hoyer   &                  & V / 154d             &                    \\ 
 		Sammellinsen       &                     & f = 250, 50, 120 &                      & 3 x                \\ 
 		Optische Bank      &                     &                  &                      & höhenverstellbar   \\ 
 		Linsenhalter       &                     &                  &                      &                    \\ 
@@ -312,7 +309,7 @@ rote Linie am linken Rand des Bildschirms befindet. Dadurch wird die Distanz
 des aufgezeichneten Spektrums bestimmt. Nun wird auf diese Art das gesamte
 Spektrum aufgezeichnet, welches schließlich Bild für Bild zusammengesetzt
 werden kann. Dabei ist zu beachten, dass das Spektrum immer von beiden
-Lichtquellen und der Iodprobe festgehalten wird, bevor die Kameraposition
+Lichtquellen und der Jodprobe festgehalten wird, bevor die Kameraposition
 verschoben wird. Weil bei den verschiedenen Farbeindrücken unterschiedliche
 Helligkeiten vorliegen, muss auch immer der Kontrast neu eingestellt werden.
 Ein Bild eines Teils des Spektrums in entsprechenden Computerprogramm ist
@@ -395,19 +392,19 @@ Zunächst galt es die aufgenommenen Bilder in ein gesamtes Spektrum
 zusammenzufügen. Dazu wurde bei \autoref{sec:durchfuhrung} sichergestellt, dass
 die Aufnahmen einen Überlapp besitzen welcher groß genug ist, damit etwaige
 Ausrichtungsfehler bzw nicht-belichteten Anteile des Bildes weggeschnitten
-werden können. Um herauszufinden wie groß der Überlapp, und somit der Spielraum für
-die Korrektur, ist, wurde mittels GIMP die Position einer Gelben Spektrallinie im
-zweiten und dritten Bild gemessen und dem Python-Skript
-übergeben. Die erhaltene Differenz entspricht genau der Breite eins dieser Bilder.
-Diese Bildbreite ist jedoch dynamisch von ganz links nach ganz rechts
+werden können. Um herauszufinden wie groß der Überlapp, und somit der Spielraum
+für die Korrektur, ist, wurde mittels GIMP die Position einer Gelben
+Spektrallinie im zweiten und dritten Bild gemessen und dem Python-Skript
+übergeben. Die erhaltene Differenz entspricht genau der Breite eins dieser
+Bilder. Diese Bildbreite ist jedoch dynamisch von ganz links nach ganz rechts
 verschiebbar. Durch Zusammenfügen ist herausgefunden worden, dass ganz links
-die besten Resultate, mit den niedrigsten Sprüngen bei den Übergängen, erzeugt werden.
-Da die Bilder auf Empfehlung sehr kurz Belichtet wurden, musste die Intensität
-mittels einer Gamma-Korrektur geboostet werden. Damit die Peaks im
-Quecksilberspektrum noch besser ersichtlich sind, wurde ein CLAHE Algorithm auf die
-Bilddaten angewendet, wodurch der Noise reduziert wurde aber die Peaks erhalten
-bleiben. Schlussendlich wurden diese Bilder nun zusammengesetzt. Dadurch entstehen
-folgende Spektren:
+die besten Resultate, mit den niedrigsten Sprüngen bei den Übergängen, erzeugt
+werden. Da die Bilder auf Empfehlung sehr kurz Belichtet wurden, musste die
+Intensität mittels einer Gamma-Korrektur geboostet werden. Damit die Peaks im
+Quecksilberspektrum noch besser ersichtlich sind, wurde ein CLAHE Algorithm auf
+die Bilddaten angewendet, wodurch der Noise reduziert wurde aber die Peaks
+erhalten bleiben. Schlussendlich wurden diese Bilder nun zusammengesetzt.
+Dadurch entstehen folgende Spektren:
 
 \subsubsection{Spektrogramme des Prisma}
 Zunächst wird das gemessene Kalibrierungsspektrum einer Quecksilber-Cadmium
@@ -426,8 +423,9 @@ Lampe dargestellt, siehe \autoref{fig:prismaHgSpektrum}.
 
 Dieses Spektrum wird verwendet um die Dispersionrelation des Prismas zu finden
 und einen Isomorphismus zwischen Pixel und Nanometer zu erstellen. Unter
-Verwendung dieses Isomorphismus wurde den Pixeln in diesen Graphiken schließlich eine
-Wellenlänge zugeordnet. Eine genauere Ausführung hierzu findet sich in \autoref{sec:DispersionPrism}.
+Verwendung dieses Isomorphismus wurde den Pixeln in diesen Graphiken
+schließlich eine Wellenlänge zugeordnet. Eine genauere Ausführung hierzu findet
+sich in \autoref{sec:DispersionPrism}.
 
 Nun wird das Halogenspektrum dargestellt, siehe
 \autoref{fig:prismaHaloSpektrum}. 
@@ -437,24 +435,23 @@ Nun wird das Halogenspektrum dargestellt, siehe
 	\end{center}
 	\caption{
 		Diese Graphik beinhaltet das Farb und die Intensitätsspektrum einer
-		Halogenlampe und stellt das Referenzspektrum für das Iodspektrum dar. 
+		Halogenlampe und stellt das Referenzspektrum für das Jodspektrum dar. 
 	}\label{fig:prismaHaloSpektrum}
 \end{figure}
 
-Zuletzt nun das Spektrum von Iod beleuchtet mit der Halogenlampe, siehe
-\autoref{fig:prismaIodSpektrum}.
+Zuletzt nun das Spektrum von Jod beleuchtet mit der Halogenlampe, siehe
+\autoref{fig:prismaJodSpektrum}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/I_plot.pdf}
 	\end{center}
 	\caption{Diese Graphik beinhaltet das Farb und die Intensitätsspektrum einer
-		Halogenlampe mit Iodmolekülen im Abbildungpfad
-	}\label{fig:prismaIodSpektrum}
+		Halogenlampe mit Jodmolekülen im Abbildungpfad
+	}\label{fig:prismaJodSpektrum}
 \end{figure}
 
 \subsubsection{Dispersionskurve des Prismenspektrographen}\label{sec:DispersionPrism}
-
 
 Durch Identifikation der Peaks im Referenzspektrum und der Zuordnung mit den
 bekannten Wellenlängen dieser Peaks, aus der
@@ -496,12 +493,12 @@ Gitterspektrometer dargestellt.
 		\includegraphics[width=0.95\textwidth]{figures/intensity_spektrum_gitter.pdf}
 	\end{center}
 	\caption{Diese Graphik beinhaltet die gemessen Spektren für die Hg-Cd Lampe,
-		der Halogenlampe und der Halogenlampe mit dem Iod vorgeschoben.
+		der Halogenlampe und der Halogenlampe mit dem Jod vorgeschoben.
 	}\label{fig:spektraGitter}
 \end{figure}
 
 \subsubsection{Wellenlänge der Jod-Absorbtionsbandkanten}
-Um die Minima im Absorptionsband von Iod besser finden zu können wird die
+Um die Minima im Absorptionsband von Jod besser finden zu können wird die
 Extinktion gebildet indem das Halogenspektrum als Referenzspektrum dient. 
 
 \begin{figure}[H]
@@ -512,15 +509,15 @@ Extinktion gebildet indem das Halogenspektrum als Referenzspektrum dient.
 	\caption{Diese Graphik beinhaltet die Extinktionskurven des Prismenspektrographen
 		(oben) und des Gitterspektrographens (unten) und wurde mittels der 
 		\autoref{fig:spektraGitter} \autoref{fig:prismaHaloSpektrum} und 
-		\autoref{fig:prismaIodSpektrum} erstellt.
+		\autoref{fig:prismaJodSpektrum} erstellt.
 	}\label{fig:extinktionkurven}
 \end{figure}
 
 Zudem wird die Extinktion negiert damit die Minima zu markante Peaks werden,
-welche leicht mittels Vorhanden Peak-Finding-Algorithmen gefunden werden können.
-Dabei wurde sich auf den markante Bereich der Extinktionsspektren fokussiert, wo
-die Absorptionen klar ersichtlich sind. Damit ist die einfache Findung und
-Bearbeitung der Peaks gewährleistet.
+welche leicht mittels Vorhanden Peak-Finding-Algorithmen gefunden werden
+können. Dabei wurde sich auf den markante Bereich der Extinktionsspektren
+fokussiert, wo die Absorptionen klar ersichtlich sind. Damit ist die einfache
+Findung und Bearbeitung der Peaks gewährleistet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -580,7 +577,6 @@ Die maximierte Wellenzahl ist:
 	\nu = \SI{2.047(9)e4}{\per\cm}
 \end{equation}
 
-
 Jedoch kann auch Aufgrund der gewählten quadratischen Scheitelpunktform die
 Scheitelpunktswellenzahl (maximiert) auch direkt am Fitparameter $b =
 	\SI{2.047(8)e4}{\per\cm}$, welches Aufgrund des niedrigeren
@@ -601,24 +597,32 @@ Konvergenzenergie ab erhält man die Dissoziationsenergie:
 
 \subsection{Auflösevermögen}
 
-\subsubsection{Prismenspektrograph}
-\begin{equation*}
-	\lambda = \SI{431.907(6)}{\nano\meter}
-\end{equation*}
+Um das Auflösevermögen der Spektrographen vergleichbar zu machen wurde bei
+beiden ein Peak im violetten Bereich genommen und die \autoref{eq:auflosung}
+genommen um die Auflösung zu berechnen. Für das $\Delta \lambda$ wurde die
+Definition als Halbwertsbreite angewandt.
 
-\begin{equation*}
-	\Delta \lambda = \SI{0.133(6)}{\nano\meter}
-\end{equation*}
+\subsubsection{Prismenspektrograph}
+Für den Prismenspektrograph wurde der Peak mittels der Software gefunden und es
+wurde per Hand die Halbwertsbreite in Pixel bestimmt. Diese wurde nun mittels
+der Dispersionskurve von der Software in Nanometer umgerechnet somit sind
+folgende Werte zustandegekommen:
+\begin{align*}
+	\lambda                       & = \SI{431.907(6)}{\nano\meter} \\
+	\Delta \lambda                & = \SI{0.133(6)}{\nano\meter}   \\
+	\frac{\lambda}{\Delta\lambda} & = \num{3250(13)}
+\end{align*}
 
 \subsubsection{Gitterspektograph}
+Für den Gitterspektographen wurde der Peak und die Halbwertsbreite per Hand in
+Nanometer gemessen. Die Messunsicherheiten wurde großzügig angenommen, damit
+Richtigkeit garantiert werden kann.
 
-\begin{equation*}
-	\lambda = \SI{437.11(10)}{\nano\meter}
-\end{equation*}
-
-\begin{equation*}
-	\Delta \lambda = \SI{1.50(10)}{\nano\meter}
-\end{equation*}
+\begin{align*}
+	\lambda                       & = \SI{437.11(10)}{\nano\meter} \\
+	\Delta \lambda                & = \SI{1.50(10)}{\nano\meter}   \\
+	\frac{\lambda}{\Delta\lambda} & = \num{290(20)}
+\end{align*}
 
 \section{Diskussion}\label{sec:disk}
 
@@ -657,10 +661,13 @@ dessen letzte Kalibrierung im Jahr 2008 stattgefunden hat, was darauf schließen
 lässt, dass eine erneute Kalibrierung die Genauigkeit verbessern könnte.
 
 \subsection{Auflösevermögen}
-Die erhaltenen Werte der Auflösevermögen sind in folgender
-\autoref{tab:vergleich_auflosung} gegenübergestellt.
+Die erhaltenen Werte der Auflösevermögen werden nun gegenübergestellt:
 
-%todo vergleich der Werte
+\begin{align*}
+	\frac{\lambda}{\Delta\lambda}_\text{Prisma} & = \num{3250(13)} \\
+	\frac{\lambda}{\Delta\lambda}_\text{Gitter} & = \num{290(20)}
+\end{align*}
+
 Ein Vergleich dieser Werte zeigt klar, dass der Prismenspektrograph eine
 deutlich höhere Auflösung hat. Dies wird auch bei der qualitativen Betrachtung
 der entsprechenden Bilder sichtbar.
@@ -676,7 +683,6 @@ Literaturwert gegenübergestellt.
 \end{enumerate}
 
 Der Literaturwert ist also im Fehlerintervall enthalten.
-
 
 \section{Zusammenfassung}\label{sec:zs}
 Zunächst lässt sich feststellen, dass die Handhabung des Gitterspektrographen
@@ -694,14 +700,16 @@ werden kann.
 Im Rahmen dieses Praktikums wurden die Spektren einer Hg-Lampe, einer
 Halogenlampe und einer Jodprobe, sowohl mit einem Prismenspektrographen als
 auch mit einem Gitterspektrographen bestimmt. Die erhaltenen Spektren sind in
- \autoref{fig:prismaHgSpektrum} \autoref{fig:prismaHaloSpektrum}
-\autoref{fig:prismaIodSpektrum} und \autoref{fig:spektraGitter} ersichtlich.
+\autoref{fig:prismaHgSpektrum} \autoref{fig:prismaHaloSpektrum}
+\autoref{fig:prismaJodSpektrum} und \autoref{fig:spektraGitter} ersichtlich.
 
 \subsection{Auflösevermögen}
 
-Die erhaltenen Werte für die Auflösevermögen sind in folgender
-\autoref{tab:zs_auflosevermogen} ersichtlich.
-%todo tab
+Die erhaltenen Werte für die Auflösevermögen sind:
+\begin{align*}
+	\frac{\lambda}{\Delta\lambda}_\text{Prisma} & = \num{3250(13)} \\
+	\frac{\lambda}{\Delta\lambda}_\text{Gitter} & = \num{290(20)}
+\end{align*}
 
 \subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
@@ -723,7 +731,7 @@ $E_{\text{Diss}_\text{lit}} =
 \section{Appendix}\label{sec:Appendix}
 \subsection{Code}\label{sec:code}
 \lstinputlisting[language=Python,caption=For Merging the recorded images and determination of the dispersion relation. The resoltion power of the prism was also determined.]{./analysis/imageprep.py}
-\lstinputlisting[language=Python,caption=The wavelength extraction of the band eges in the Iodine absorptions spectrum and calculation of the dissociation energy of iodine molecule in ground state.]{./analysis/extinction.py}
+\lstinputlisting[language=Python,caption=The wavelength extraction of the band eges in the Iodine absorptions spectrum and calculation of the dissociation energy of Jodine molecule in ground state.]{./analysis/extinction.py}
 
 \printbibliography
 \listoffigures
