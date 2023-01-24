@@ -491,17 +491,20 @@ Bearbeitung der Peaks gewährleistet.
 Da diesen Peaks gleich eine Wellenlänge zu geordnet wird kann die Wellenlänge
 der Bandlücke abgelesen werden.
 
-Die Wellenlängen der Peaks lassen nochmals mittels eines quadratischen Fits (in
-Scheitelpunktform $\nu = a (x-b)^2 + c$) beschreiben und finden dadurch einen
-Isomorphismus zwischen den Indexes und deren Wellenzahlen $\nu$.
+Die Wellenlängen der Peaks lassen nochmals, Aufgrund des Deslandre'sche
+Gesetzt, mittels eines quadratischen Fits (in Scheitelpunktform $\nu = a
+	(x-b)^2 + c$) beschreiben und finden dadurch einen Isomorphismus zwischen den
+Indexes und deren Wellenzahlen $\nu$.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/waveNumberFitPrisma.pdf}
 		\includegraphics[width=0.95\textwidth]{figures/waveNumberFitGitter.pdf}
 	\end{center}
-	\caption{}\label{fig:wellenZahlenFit}
-
+	\caption{Diese Graphik modelliert, dass Verhalten der Bandlückenverteilung eines Gitterspektrographen
+		und eines Prismenspektrographen nach dem ersten Deslandre'schen Gesetzt. Jedoch 
+		wurde das quadratische Verhalten mittels der Scheitelpunktform gefittet.
+	}\label{fig:wellenZahlenFit}
 \end{figure}
 
 Die Differenzen der Wellenzahlen können auf Grund der quadratischen Natur der
@@ -526,21 +529,26 @@ Prismenspektrometer gemacht.
 
 Indem in die invertierte lineare Funktion vom Fit 0 eingesetzt wird kann der
 Index gefunden werden für den die Wellenzahl im Isomorphismus maximiert wird
-(siehe Vorzeichen der quadratischen Funktion).
+(siehe Vorzeichen der quadratischen Funktion). 
 
 Die maximierte Wellenzahl ist:
 \begin{equation}
-	\nu = \SI{2.047(9)e6}{\per\cm}
+	\nu = \SI{2.047(9)e4}{\per\cm}
 \end{equation}
 
-Mittels der Strahlungsenergieformel ist die Scheitelpunktsenergie zu berechnen:
+Jedoch kann auch Aufgrund der gewählten quadratischen Scheitelpunktform die
+Scheitelpunktswellenzahl (maximiert) auch direkt am Fitparameter $b =
+	\SI{2.047(8)e4}{\per\cm}$, welches Aufgrund des niedrigeren
+Auswertungsschritten eine niedrigere Unsicherheit hat. Mittels der
+Strahlungsenergieformel ist die Konvergenzenergie zu berechnen:
+
 \begin{equation}
 	E_s = h c \nu = \SI{4.066(17)e-19}{\joule} = \SI{2.538(11)}{\electronvolt}
 \end{equation}
 
 Zieht man Schlussendlich die Anregungsenergie
-$E_A=\SI{0.970(5)}{\electronvolt}$ von der Scheitelpunktsenergie ab erhält man
-die Dissoziationsenergie:
+$E_A=\SI{0.970(5)}{\electronvolt}$ (Unsicherheit Implizit angenommen) von der
+Konvergenzenergie ab erhält man die Dissoziationsenergie:
 
 \begin{equation}
 	E_\text{Diss} = E_s - E_A = \SI{1.568(12)}{\electronvolt}
