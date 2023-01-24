@@ -151,10 +151,11 @@ Rekorder wird in der Fokusebene platziert, um die Intensität der
 elektromagnetischen Strahlung zu messen.
 
 %todo max brachst du noch irgendwelche formeln?
+% Ja bitte noch allgemeine aufloesungs formel Extinktion dispersionsrelation, photoeffekt energie, wellenzahl zu wellenlangen relation
 
 \section{Versuchsaufbau}\label{sec:aufbau}
 
-\subsection{Prismenspekrograph}
+\subsection{Prismenspektrograph}
 
 Der Versuchsaufbau ist in folgender \autoref{fig:aufbau_Spektograph}
 ersichtlich. Dabei wird die Position der Lichtquelle mit einem leeren
@@ -245,7 +246,7 @@ verwendet.
 
 \section{Durchführung und Messergebnisse}\label{sec:durchfuhrung}
 
-\subsection{Prismenspekrograph}
+\subsection{Prismenspektrograph}
 
 Nachdem die Linsen und Prismen wie bereits in \autoref{sec:aufbau} angeführt,
 aufgebaut wurden, wird das, von der Kamera erfasste, Spektrum am Computer mit
@@ -334,6 +335,7 @@ ist dabei symbolisch in \autoref{fig:comp_gitter} sichtbar.
 \end{figure}
 
 \section{Auswertung}\label{sec:auswertung}
+
 Um zu sehen wie sich die Unsicherheit der Messungen bis in die Ergebnisse
 fortpflanzt, ist erweiterte Gauss-Methode verwendet worden. Die Grundlagen
 dieser Methode stammen von den Powerpointfolien von
@@ -345,6 +347,29 @@ symbolische Manipulation hergenommen und die restlichen Pakete für leichters
 handhaben der Daten. Dies wurde aber alles durch \verb#labtool-ex2#
 abstrahiert.
 
+\subsection{Prismenspektrograph}
+Zunächst galt es die aufgenommenen Bilder in ein gesamtes Spektrum
+zusammenzufügen. Dazu wurde bei \autoref{sec:durchfuhrung} sichergestellt, dass
+die Aufnahmen einen Überlapp besitzen welcher groß genug ist, damit etwaige
+Ausrichtungsfehler bzw nicht-belichteten Anteile des Bildes weggeschnitten
+werden können. Um herauszufinden wie groß Überlapp und somit der Spielraum für
+Korrektur finden zu können wurde mittels GIMP, eine Gelben Spektrallinie im
+zweiten und dritten Bild deren Position gemessen und im Python-Skript
+eingefüttert. Die Differenz ist genau die Erhaltene Breite eins dieser Bilder.
+Diese Bildbreite ist jedoch dynamisch von ganz links nach ganz rechts
+verschiebbar. Durch Zusammenfügen ist herausgefunden worden, dass ganz links
+die besten Resultate, mit den niedrigsten Sprüngen, bei den Übergängen erzeugt.
+Da die Bilder auf Empfehlung sehr kurz Belichtet wurden, musste die Intensität
+mittels einer Gamma-Korrektur geboostet werden. Damit die Peaks im
+Quecksilberspektrum noch besser ersichtlich, wurde eine CLAHE Algorithm auf die
+Bilddaten angewendet, wodurch der Noise reduziert wurde aber die Peaks erhalten
+bleiben. Schlussendlich wurden diese Bilder nun zusammengesetzt. Dadurch sind
+folgende Spektren:
+
+\subsubsection{Spektrogramme des Prisma}
+Zunächst wird das gemessene Kalibrierungsspektrum einer Quecksilber-Cadmium
+Lampe dargestellt, siehe \autoref{fig:prismaHgSpektrum}.
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/Hg_plot.pdf}
@@ -352,12 +377,22 @@ abstrahiert.
 	\caption{}\label{fig:prismaHgSpektrum}
 \end{figure}
 
+Dieses Spektrum wird verwendet um die Dispersionrelation des Prismas zu finden
+und einen Isomorphismus zwischen Pixel und Nanometer erstellen. Unter
+Verwendung dieses Isomorphismus wurde den Pixeln in diesen Graphiken auch eine
+Wellenlänge zugeordnet. Mehr dazu in \autoref{sec:DispersionPrism}.
+
+Nun wird das Halogenspektrum dargestellt, siehe
+\autoref{fig:prismaHaloSpektrum}. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/Halo_plot.pdf}
 	\end{center}
 	\caption{}\label{fig:prismaHaloSpektrum}
 \end{figure}
+
+Zuletzt nun das Spektrum von Iod beleuchtet mit der Halogenlampe, siehe
+\autoref{fig:prismaIodSpektrum}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -366,7 +401,23 @@ abstrahiert.
 	\caption{}\label{fig:prismaIodSpektrum}
 \end{figure}
 
-\subsection{Dispersionskurve des Prismenspektrographen}
+\subsubsection{Dispersionskurve des Prismenspektrographen}\label{sec:DispersionPrism}
+
+Durch Identifikation der Peaks im Referenzspektrum und der Zuordnung mit den
+bekannten Wellenlängen dieser Peaks, aus der Angabe~\cite{}, ist es möglich die
+Dispersionskurve mittels Fit zu beschreiben. Da jedoch nur gewisse Wellenlängen
+der Peaks bekannt sind und der Cyan Peak bei unserer Messung nicht aufscheint,
+sind folgende Wellenlängen und deren zugeordneten Peaks fürs Fitten genommen
+worden.
+
+\begin{enumerate}
+	\item Rot \SI{643.9}{\nano\meter}
+	\item Gelb 1 \SI{579.0}{\nano\meter}
+	\item Gelb 1 \SI{576.9}{\nano\meter}
+	\item Grün \SI{546.0}{\nano\meter}
+	\item Türkis \SI{508.5}{\nano\meter}
+	\item Blau \SI{467.8}{\nano\meter}
+\end{enumerate}
 
 \begin{figure}[H]
 	\begin{center}
@@ -375,9 +426,14 @@ abstrahiert.
 	\caption{}\label{fig:dispersionkurve}
 \end{figure}
 
-\subsection{Auflösevermögen}
+Diese gefittet Funktion wird nun, wann auch immer beim Prismenspektrometer von
+Pixel zu Nanometer und dessen Inverse wenn Nanometer zu Pixel umgerechnet
+werden muss.
 
-\subsection{Wellenlänge der Jod-Absorbtionsbandkanten}
+\subsection{Gitterspektrometer}
+
+Hier werden nun die Intensität-Spektren der verschiedenen Belichtungen des
+Gitterspektrometer dargestellt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -386,7 +442,7 @@ abstrahiert.
 	\caption{}\label{fig:spektraGitter}
 \end{figure}
 
-\subsection{Dissoziationsenergie des Jodmoleküls}
+\subsubsection{Wellenlänge der Jod-Absorbtionsbandkanten}
 
 \begin{figure}[H]
 	\begin{center}
@@ -421,6 +477,13 @@ abstrahiert.
 	\caption{}\label{fig:wellenZahlenDeltaFit}
 
 \end{figure}
+
+\subsubsection{Dissoziationsenergie des Jodmoleküls}
+Aufgrund der größeren Unsicherheit des linearen Fits beim Gitterspektrometer,
+in \autoref{fig:wellenZahlenDeltaFit}, wird nur die Auswertung für den
+Prismenspektrometer gemacht.
+
+\subsection{Auflösevermögen}
 
 \section{Diskussion}\label{sec:disk}
 
