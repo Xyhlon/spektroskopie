@@ -291,6 +291,8 @@ def waveNumber(P: Project, peaks, name: str):
     print("----------------------------------")
     print(f"{vindex=}")
     print(f"{v=}")
+    wavelength = 1 / v
+    print(f"{wavelength=}")
 
     print("Scheitelenergie")
     E = h * speed_of_light * v
