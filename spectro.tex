@@ -151,9 +151,49 @@ befindet sich in der Regel im Brennpunkt des Kollimators. Die Kamera oder der
 Rekorder wird in der Fokusebene platziert, um die Intensität der
 elektromagnetischen Strahlung zu messen.
 
-%todo max brachst du noch irgendwelche formeln?
-% Ja bitte noch allgemeine aufloesungs formel Extinktion dispersionsrelation, photoeffekt energie, wellenzahl zu wellenlangen relation
+\subsection{Verwendete Formeln}
 
+Für die Auswertung und das restliche Protokoll werden die in diesem Kapitel aufgelisteten Formeln benötigt.
+
+
+Grundsätzlich lässt sich das Auflösevermögen $A$ nach folgender \autoref{eq:auflosung} bestimmen.
+
+\begin{equation}
+	A = \frac{\lambda}{\Delta\lambda}
+	\label{eq:auflosung}
+\end{equation}
+
+$\lambda$ bezeichnet dabei die Wellenlänge und $\Delta\lambda$ die Halbwertsbreite.
+
+Für die Extinktion $E_x$ gilt folgende Relation.
+
+\begin{equation}
+	E_x = \frac{I}{I_{ref}}
+	\label{eq:extinktion}
+\end{equation}
+
+$I$ bezeichnet dabei die Intensität und $I_{ref}$ die Intensität der Referenzquelle.
+
+Für die Energie $E$ gilt nach dem Photoeffekt folgendes.
+
+\begin{equation}
+	E = h f \\
+	c = \lambda 
+	\label{eq:energie}
+\end{equation}
+
+$h$ steht dabei für die Planck-Konstante, $f$ für die Frequenz und $c$ für die Lichtgeschwindigkeit.
+
+Die Wellenzahl $\nu$ steht in folgender Relation zur Wellenlänge.
+
+\begin{equation}
+	\nu = \frac{1}{\lambda}
+	\label{eq:wellenzahl}
+\end{equation}
+
+
+
+%todo iod
 \section{Versuchsaufbau}\label{sec:aufbau}
 
 \subsection{Prismenspektrograph}
@@ -415,7 +455,7 @@ Zuletzt nun das Spektrum von Iod beleuchtet mit der Halogenlampe, siehe
 
 \subsubsection{Dispersionskurve des Prismenspektrographen}\label{sec:DispersionPrism}
 
-%todo klammer falsch
+
 Durch Identifikation der Peaks im Referenzspektrum und der Zuordnung mit den
 bekannten Wellenlängen dieser Peaks, aus der Angabe~\cite{}, ist es möglich die
 Dispersionskurve mittels eines quadratischen Fit (in Scheitelpunktform $\lambda
@@ -538,7 +578,7 @@ Die maximierte Wellenzahl ist:
 \begin{equation}
 	\nu = \SI{2.047(9)e4}{\per\cm}
 \end{equation}
-%todo warum 10^4 cm
+
 
 Jedoch kann auch Aufgrund der gewählten quadratischen Scheitelpunktform die
 Scheitelpunktswellenzahl (maximiert) auch direkt am Fitparameter $b =
