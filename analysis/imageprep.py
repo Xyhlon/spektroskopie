@@ -10,6 +10,7 @@ import cv2
 import matplotlib.pyplot as plt
 from numpy.typing import NDArray
 from labtool_ex2 import Project
+from uncertainties import ufloat
 
 
 # (0,0)-----------(x,0)
@@ -180,9 +181,28 @@ def genBasisMap(P: Project) -> tuple[callable, callable]:
     def nmToPx(l):
         return np.sqrt((l - p["c"].value) / p["a"].value) + p["b"].value
 
-    # lambda_violet = wavelength(violet)
-    # print(f"Wavelength of violet line: {lambda_violet}")
-    # print(f"Spectral resolution: {lambda_violet/0.4}")
+    wellenlaenge = ufloat(pxToNm(violet), abs(pxToNm(violet) - pxToNm(violet + 5)))
+    halbwertsbreite = ufloat(
+        pxToNm(violet + 65) - pxToNm(violet - 65),
+        abs(pxToNm(violet + 70) - pxToNm(violet + 65)),
+    )
+    aufloesung = wellenlaenge / halbwertsbreite
+
+    print(f"===============================")
+    print(f"Prismenspektrograph")
+    print(f"{wellenlaenge=}")
+    print(f"{halbwertsbreite=}")
+    print(f"{aufloesung=}")
+    print(f"===============================")
+
+    wellenlaenge = ufloat(437.1, 0.1)
+    halbwertsbreite = ufloat(1.5, 0.1)
+    aufloesung = wellenlaenge / halbwertsbreite
+    print(f"Gitterspektrograph")
+    print(f"{wellenlaenge=}")
+    print(f"{halbwertsbreite=}")
+    print(f"{aufloesung=}")
+    print(f"===============================")
     return (pxToNm, nmToPx)
 
 
