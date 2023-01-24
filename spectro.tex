@@ -31,8 +31,6 @@
 
 \subsection{Molekulare Spektroskopie}
 
-test
-
 Wenn elektromagnetische Strahlung mit einem Molekül in Wechselwirkung tritt,
 kann sie absorbiert, emittiert oder gestreut werden, je nach der Energie der
 Strahlung und den Energieniveaus des Moleküls. Die Energie der Strahlung wird
@@ -221,6 +219,8 @@ passenden Halterung direkt vor die Lichtquelle gestellt.
 	}\label{fig:aufbau_gitter}
 \end{figure}
 
+\newpage
+
 \section{Geräteliste}\label{sec:geraeteliste}
 
 Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte
@@ -355,18 +355,18 @@ Zunächst galt es die aufgenommenen Bilder in ein gesamtes Spektrum
 zusammenzufügen. Dazu wurde bei \autoref{sec:durchfuhrung} sichergestellt, dass
 die Aufnahmen einen Überlapp besitzen welcher groß genug ist, damit etwaige
 Ausrichtungsfehler bzw nicht-belichteten Anteile des Bildes weggeschnitten
-werden können. Um herauszufinden wie groß Überlapp und somit der Spielraum für
-Korrektur finden zu können wurde mittels GIMP, eine Gelben Spektrallinie im
-zweiten und dritten Bild deren Position gemessen und im Python-Skript
-eingefüttert. Die Differenz ist genau die Erhaltene Breite eins dieser Bilder.
+werden können. Um herauszufinden wie groß der Überlapp, und somit der Spielraum für
+die Korrektur, ist, wurde mittels GIMP die Position einer Gelben Spektrallinie im
+zweiten und dritten Bild gemessen und dem Python-Skript
+übergeben. Die erhaltene Differenz entspricht genau der Breite eins dieser Bilder.
 Diese Bildbreite ist jedoch dynamisch von ganz links nach ganz rechts
 verschiebbar. Durch Zusammenfügen ist herausgefunden worden, dass ganz links
-die besten Resultate, mit den niedrigsten Sprüngen, bei den Übergängen erzeugt.
+die besten Resultate, mit den niedrigsten Sprüngen bei den Übergängen, erzeugt werden.
 Da die Bilder auf Empfehlung sehr kurz Belichtet wurden, musste die Intensität
 mittels einer Gamma-Korrektur geboostet werden. Damit die Peaks im
-Quecksilberspektrum noch besser ersichtlich, wurde eine CLAHE Algorithm auf die
+Quecksilberspektrum noch besser ersichtlich sind, wurde ein CLAHE Algorithm auf die
 Bilddaten angewendet, wodurch der Noise reduziert wurde aber die Peaks erhalten
-bleiben. Schlussendlich wurden diese Bilder nun zusammengesetzt. Dadurch sind
+bleiben. Schlussendlich wurden diese Bilder nun zusammengesetzt. Dadurch entstehen
 folgende Spektren:
 
 \subsubsection{Spektrogramme des Prisma}
@@ -385,9 +385,9 @@ Lampe dargestellt, siehe \autoref{fig:prismaHgSpektrum}.
 \end{figure}
 
 Dieses Spektrum wird verwendet um die Dispersionrelation des Prismas zu finden
-und einen Isomorphismus zwischen Pixel und Nanometer erstellen. Unter
-Verwendung dieses Isomorphismus wurde den Pixeln in diesen Graphiken auch eine
-Wellenlänge zugeordnet. Mehr dazu in \autoref{sec:DispersionPrism}.
+und einen Isomorphismus zwischen Pixel und Nanometer zu erstellen. Unter
+Verwendung dieses Isomorphismus wurde den Pixeln in diesen Graphiken schließlich eine
+Wellenlänge zugeordnet. Eine genauere Ausführung hierzu findet sich in \autoref{sec:DispersionPrism}.
 
 Nun wird das Halogenspektrum dargestellt, siehe
 \autoref{fig:prismaHaloSpektrum}. 
@@ -415,6 +415,7 @@ Zuletzt nun das Spektrum von Iod beleuchtet mit der Halogenlampe, siehe
 
 \subsubsection{Dispersionskurve des Prismenspektrographen}\label{sec:DispersionPrism}
 
+%todo klammer falsch
 Durch Identifikation der Peaks im Referenzspektrum und der Zuordnung mit den
 bekannten Wellenlängen dieser Peaks, aus der Angabe~\cite{}, ist es möglich die
 Dispersionskurve mittels eines quadratischen Fit (in Scheitelpunktform $\lambda
@@ -435,14 +436,14 @@ folgende Wellenlängen und deren zugeordneten Peaks fürs Fitten genommen worden
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/mappingPxToWaveLength.pdf}
 	\end{center}
-	\caption{Diese Graphik beschreibt das Dispersion der verschiedenen in Pixeln
-		und stellt die Dispersionrelation zwischen Pixel zu Wellenlängen dar.
+	\caption{Diese Graphik beschreibt die Dispersion der verschiedenen Pixeln
+		und stellt die Dispersionrelation zwischen Pixel und Wellenlängen dar.
 	}\label{fig:dispersionkurve}
 \end{figure}
 
 Diese gefittet Funktion wird nun, wann auch immer beim Prismenspektrometer von
 Pixel zu Nanometer und dessen Inverse wenn Nanometer zu Pixel umgerechnet
-werden muss.
+werden muss, verwendet.
 
 \subsection{Gitterspektrometer}
 
@@ -459,7 +460,7 @@ Gitterspektrometer dargestellt.
 \end{figure}
 
 \subsubsection{Wellenlänge der Jod-Absorbtionsbandkanten}
-Um die Valleys im Absorptionsband von Iod besser finden zu können wird die
+Um die Minima im Absorptionsband von Iod besser finden zu können wird die
 Extinktion gebildet indem das Halogenspektrum als Referenzspektrum dient. 
 
 \begin{figure}[H]
@@ -474,10 +475,10 @@ Extinktion gebildet indem das Halogenspektrum als Referenzspektrum dient.
 	}\label{fig:extinktionkurven}
 \end{figure}
 
-Zudem wird die Extinktion negiert damit die Valleys zu markante Peaks werden,
-welche leicht mittels Vorhanden Peak-Finding-Algorithmen gefunden werden kann.
-Dabei wurde sich auf markante Bereich der Extinktionsspektren fokussiert, wo
-die Absorption klar ersichtlich sind. Damit ist die einfache Findung und
+Zudem wird die Extinktion negiert damit die Minima zu markante Peaks werden,
+welche leicht mittels Vorhanden Peak-Finding-Algorithmen gefunden werden können.
+Dabei wurde sich auf den markante Bereich der Extinktionsspektren fokussiert, wo
+die Absorptionen klar ersichtlich sind. Damit ist die einfache Findung und
 Bearbeitung der Peaks gewährleistet.
 
 \begin{figure}[H]
@@ -491,10 +492,10 @@ Bearbeitung der Peaks gewährleistet.
 	}\label{fig:ausschnittPeaks}
 \end{figure}
 
-Die Wellenlängen der Peaks lassen nochmals, Aufgrund des Deslandre'sche
+Die Wellenlängen der Peaks lassen sich nochmals, aufgrund des Deslandre'sche
 Gesetzt, mittels eines quadratischen Fits (in Scheitelpunktform $\nu = a
 	(x-b)^2 + c$) beschreiben und finden dadurch einen Isomorphismus zwischen den
-Indexes und deren Wellenzahlen $\nu$.
+Indizes und deren Wellenzahlen $\nu$.
 
 \begin{figure}[H]
 	\begin{center}
@@ -521,8 +522,8 @@ $\nu$ als lineare Funktion modelliert und gefittet werden.
 
 \end{figure}
 
-Diese Funktion modelliert die Steigung des Isomorphismus und erlaubt uns den
-Extreme Wert für die Wellenzahl zu finden.
+Diese Funktion modelliert die Steigung des Isomorphismus und erlaubt, den
+Extrem-Wert für die Wellenzahl zu finden.
 
 \subsubsection{Dissoziationsenergie des Jodmoleküls}
 Aufgrund der größeren Unsicherheit des linearen Fits beim Gitterspektrometer,
@@ -530,13 +531,14 @@ in \autoref{fig:wellenZahlenDeltaFit}, wird nur die Auswertung für den
 Prismenspektrometer gemacht.
 
 Indem in die invertierte lineare Funktion vom Fit 0 eingesetzt wird kann der
-Index gefunden werden für den die Wellenzahl im Isomorphismus maximiert wird
+Index gefunden werden, für den die Wellenzahl im Isomorphismus maximiert wird
 (siehe Vorzeichen der quadratischen Funktion). 
 
 Die maximierte Wellenzahl ist:
 \begin{equation}
 	\nu = \SI{2.047(9)e4}{\per\cm}
 \end{equation}
+%todo warum 10^4 cm
 
 Jedoch kann auch Aufgrund der gewählten quadratischen Scheitelpunktform die
 Scheitelpunktswellenzahl (maximiert) auch direkt am Fitparameter $b =
@@ -615,9 +617,8 @@ Literaturwert gegenübergestellt.
 	\item $E_{\text{Diss}_\text{lit}} = \SI{1.57}{\electronvolt}$
 \end{enumerate}
 
-Der Literaturwert ist also in beiden Fehlerintervallen enthalten. Der erhaltene
-Wert des Prismenspektrographen liegt jedoch deutlich näher am Literaturwert.
-Auch ist dessen Unsicherheit kleiner.
+Der Literaturwert ist also im Fehlerintervall enthalten.
+
 
 \section{Zusammenfassung}\label{sec:zs}
 Zunächst lässt sich feststellen, dass die Handhabung des Gitterspektrographen
@@ -635,7 +636,7 @@ werden kann.
 Im Rahmen dieses Praktikums wurden die Spektren einer Hg-Lampe, einer
 Halogenlampe und einer Jodprobe, sowohl mit einem Prismenspektrographen als
 auch mit einem Gitterspektrographen bestimmt. Die erhaltenen Spektren sind in
-den \autoref{fig:prismaHgSpektrum} \autoref{fig:prismaHaloSpektrum}
+ \autoref{fig:prismaHgSpektrum} \autoref{fig:prismaHaloSpektrum}
 \autoref{fig:prismaIodSpektrum} und \autoref{fig:spektraGitter} ersichtlich.
 
 \subsection{Auflösevermögen}
