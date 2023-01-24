@@ -16,6 +16,8 @@
 \begin{document}
 
 \includepdf{deckblatt.pdf}
+\tableofcontents
+
 \section{Aufgabenstellung\label{sec:Aufgabenstellung}}
 
 \begin{itemize}
@@ -177,10 +179,10 @@ $I$ bezeichnet dabei die Intensität und $I_{ref}$ die Intensität der Referenzq
 
 Für die Energie $E$ gilt nach dem Photoeffekt folgendes.
 
-\begin{equation}
-	E = h f \\
-	c = \lambda \label{eq:energie}
-\end{equation}
+\begin{align}
+	E & = h f                          \\
+	c & = \lambda f \label{eq:energie}
+\end{align}
 
 $h$ steht dabei für die Planck-Konstante, $f$ für die Frequenz und $c$ für die Lichtgeschwindigkeit.
 
@@ -684,6 +686,8 @@ Literaturwert gegenübergestellt.
 
 Der Literaturwert ist also im Fehlerintervall enthalten.
 
+\newpage
+
 \section{Zusammenfassung}\label{sec:zs}
 Zunächst lässt sich feststellen, dass die Handhabung des Gitterspektrographen
 deutlich einfacher und vor allem schneller geht. Die erhaltenen Ergebnisse des
@@ -728,8 +732,8 @@ $E_{\text{Diss}_\text{lit}} =
 
 \newpage
 
-\section{Appendix}\label{sec:Appendix}
-\subsection{Code}\label{sec:code}
+\section*{Appendix}\label{sec:Appendix}
+\subsection*{Code}\label{sec:code}
 \lstinputlisting[language=Python,caption=For Merging the recorded images and determination of the dispersion relation. The resoltion power of the prism was also determined.]{./analysis/imageprep.py}
 \lstinputlisting[language=Python,caption=The wavelength extraction of the band eges in the Iodine absorptions spectrum and calculation of the dissociation energy of Jodine molecule in ground state.]{./analysis/extinction.py}
 
