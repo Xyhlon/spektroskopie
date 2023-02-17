@@ -120,7 +120,7 @@ def analysis(P: Project, peaks: NDArray, pan: NDArray, name: str):
 # KNOWN_SPECTRAL_LINES = [467.8, 479.9, 508.5, 546, 576.9, 579, 643.9]
 # # nm Blue, Cyan, Turquoise, Green, Yellow1, Yellow2, Red
 KNOWN_SPECTRAL_LINES = [467.8, 508.5, 546, 576.9, 579, 643.9]
-# nm Blue, Cyan, Turquoise, Green, Yellow1, Yellow2, Red
+# nm Blue, Turquoise, Green, Yellow1, Yellow2, Red
 OUTPUTPATH = "./output/"
 
 
@@ -138,6 +138,7 @@ def genBasisMap(P: Project) -> tuple[callable, callable]:
     violet, violet2, *peaks = peaks
     P.data["px"] = peaks
     P.data["l"] = KNOWN_SPECTRAL_LINES
+    green = peaks[2]
     print(P.data)
     P.plot_data(
         axes=ax,
@@ -181,10 +182,10 @@ def genBasisMap(P: Project) -> tuple[callable, callable]:
     def nmToPx(l):
         return np.sqrt((l - p["c"].value) / p["a"].value) + p["b"].value
 
-    wellenlaenge = ufloat(pxToNm(violet), abs(pxToNm(violet) - pxToNm(violet + 5)))
+    wellenlaenge = ufloat(pxToNm(green), abs(pxToNm(green) - pxToNm(green + 2)))
     halbwertsbreite = ufloat(
-        pxToNm(violet + 65) - pxToNm(violet - 65),
-        abs(pxToNm(violet + 70) - pxToNm(violet + 65)),
+        pxToNm(green + 7) - pxToNm(green - 7),
+        abs(pxToNm(green + 8) - pxToNm(green + 7)),
     )
     aufloesung = wellenlaenge / halbwertsbreite
 
@@ -195,8 +196,8 @@ def genBasisMap(P: Project) -> tuple[callable, callable]:
     print(f"{aufloesung=}")
     print(f"===============================")
 
-    wellenlaenge = ufloat(437.1, 0.1)
-    halbwertsbreite = ufloat(1.5, 0.1)
+    wellenlaenge = ufloat(547.5, 0.2)
+    halbwertsbreite = ufloat(2, 0.2)
     aufloesung = wellenlaenge / halbwertsbreite
     print(f"Gitterspektrograph")
     print(f"{wellenlaenge=}")
@@ -233,12 +234,10 @@ def imgPrep() -> None:
     P.figure.set_size_inches((12, 6))
 
     for name in base_names:
-
         pics = list()
         peakspics = list()
 
         for picture_name in [f"{name}{i}.JPG" for i in range(8)]:
-
             I = cv2.imread(f"{PICTURE_DIR}{picture_name}")
             imm = I[y_start:y_end, x_start:x_end]
 
